@@ -37,6 +37,36 @@
   }
  },
  "sanyo": {
+  "10544": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ご当地熱愛麺 坂内食堂 喜多方本店監修 中華そば ３食パック",
+   "reason": "before_record_from"
+  },
+  "10545": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ご当地熱愛麺 元祖ニュータンタンメン本舗監修 タンタンメン ３食パック",
+   "reason": "before_record_from"
+  },
+  "10546": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ご当地熱愛麺 博多純情らーめんShinShin監修 炊き出し豚骨らーめん ３食パック",
+   "reason": "before_record_from"
+  },
+  "10638": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 しょうゆ味ミニどんぶり",
+   "reason": "before_record_from"
+  },
+  "10639": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメンミニどんぶり",
+   "reason": "before_record_from"
+  },
+  "10643": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩らーめんミニどんぶり",
+   "reason": "before_record_from"
+  },
   "10644": {
    "date": "2026-11-05",
    "name": null,
@@ -230,6 +260,91 @@
   "11515": {
    "date": "2026-11-05",
    "name": null,
+   "reason": "before_record_from"
+  },
+  "9134": {
+   "date": "2026-11-05",
+   "name": "アラビヤン焼そば ５食パック",
+   "reason": "before_record_from"
+  },
+  "9135": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩らーめん ５食パック",
+   "reason": "before_record_from"
+  },
+  "9137": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ごま味ラーメン ５食パック",
+   "reason": "before_record_from"
+  },
+  "9140": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメン 旨辛 ５食パック",
+   "reason": "before_record_from"
+  },
+  "9141": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメン ５食パック",
+   "reason": "before_record_from"
+  },
+  "9143": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩とんこつらーめん ５食パック",
+   "reason": "before_record_from"
+  },
+  "9146": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ソースやきそば ５食パック",
+   "reason": "before_record_from"
+  },
+  "9147": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩らーめん",
+   "reason": "before_record_from"
+  },
+  "9149": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ごま味ラーメン",
+   "reason": "before_record_from"
+  },
+  "9151": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメン",
+   "reason": "before_record_from"
+  },
+  "9156": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメン 旨辛",
+   "reason": "before_record_from"
+  },
+  "9160": {
+   "date": "2026-11-05",
+   "name": "アラビヤン焼そば",
+   "reason": "before_record_from"
+  },
+  "9161": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩とんこつらーめん",
+   "reason": "before_record_from"
+  },
+  "9162": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ソースやきそば",
+   "reason": "before_record_from"
+  },
+  "9747": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 塩らーめんどんぶり",
+   "reason": "before_record_from"
+  },
+  "9749": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 ごま味ラーメンどんぶり",
+   "reason": "before_record_from"
+  },
+  "9752": {
+   "date": "2026-11-05",
+   "name": "サッポロ一番 みそラーメンどんぶり",
    "reason": "before_record_from"
   }
  }
