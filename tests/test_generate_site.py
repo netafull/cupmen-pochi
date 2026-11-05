@@ -132,7 +132,7 @@ class TestSiteWide(unittest.TestCase):
     def test_config(self):
         c = g.CONFIG
         self.assertEqual(c["site_url"], "https://cupmen.netaful.jp/")
-        self.assertEqual(c["ga_measurement_id"], "")
+        self.assertTrue(c["ga_measurement_id"].startswith("G-"))
         self.assertEqual(c["adsense_ad_slot"], "1215675017")
         self.assertEqual([x["slug"] for x in c["chains"]], ["nissin", "myojo", "sanyo", "acecook"])
         self.assertNotIn("toyo", " ".join(x["slug"] for x in c["chains"]))
