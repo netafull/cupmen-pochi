@@ -1,0 +1,43 @@
+{
+ "chain": "nissin",
+ "product_id": "14009",
+ "name": "日清のどん兵衛 きつねうどん 年に一度のだし比べ 東",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-02",
+ "launch_month": null,
+ "net_amount": "96g（76g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296684",
+ "nutrition": {
+  "kcal": 423.0,
+  "protein_g": 9.5,
+  "fat_g": 17.4,
+  "carbs_g": 57.0,
+  "salt_g": 4.6,
+  "other": {
+   "ビタミンB1": "0.23mg",
+   "ビタミンB2": "0.24mg",
+   "カルシウム": "195mg",
+   "カリウム": "119mg",
+   "リン": "168mg"
+  }
+ },
+ "nutrition_label": "1食（96g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "乳成分",
+   "さば",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14009/",
+ "first_seen_at": "2026-11-05T13:11:40+09:00",
+ "detail_checked_at": "2026-11-05"
+}

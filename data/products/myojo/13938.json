@@ -1,0 +1,44 @@
+{
+ "chain": "myojo",
+ "product_id": "13938",
+ "name": "明星 一杯満足 きつねうどん",
+ "price_excl_tax": 143,
+ "price_label": null,
+ "launch_date": "2026-08-03",
+ "launch_month": null,
+ "net_amount": "65g（55g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459433",
+ "nutrition": {
+  "kcal": 290.0,
+  "protein_g": 5.2,
+  "fat_g": 11.6,
+  "carbs_g": 41.2,
+  "salt_g": 3.9,
+  "other": {
+   "ビタミンB1": "0.19mg",
+   "ビタミンB2": "0.23mg",
+   "カルシウム": "83mg"
+  }
+ },
+ "nutrition_label": "1食（65g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "さば",
+   "大豆",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13938/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

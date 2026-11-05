@@ -1,0 +1,43 @@
+{
+ "chain": "myojo",
+ "product_id": "13940",
+ "name": "明星 一平ちゃん夜店の焼そば 超特盛 からしマヨ２個付",
+ "price_excl_tax": 340,
+ "price_label": null,
+ "launch_date": "2026-08-24",
+ "launch_month": null,
+ "net_amount": "239g（180g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459686",
+ "nutrition": {
+  "kcal": 1060.0,
+  "protein_g": 16.2,
+  "fat_g": 49.0,
+  "carbs_g": 138.5,
+  "salt_g": 8.9,
+  "other": {
+   "ビタミンB1": "0.60mg",
+   "ビタミンB2": "0.62mg",
+   "カルシウム": "253mg"
+  }
+ },
+ "nutrition_label": "1食（239g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "大豆",
+   "ごま",
+   "りんご",
+   "オレンジ"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13940/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

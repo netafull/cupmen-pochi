@@ -1,0 +1,42 @@
+{
+ "chain": "myojo",
+ "product_id": "13993",
+ "name": "明星 キセキ．監修 白い貝だし琉球そば",
+ "price_excl_tax": 300,
+ "price_label": null,
+ "launch_date": "2026-09-28",
+ "launch_month": null,
+ "net_amount": "91g（70g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881414302",
+ "nutrition": {
+  "kcal": 360.0,
+  "protein_g": 9.3,
+  "fat_g": 8.5,
+  "carbs_g": 61.5,
+  "salt_g": 6.2,
+  "other": {
+   "カルシウム": "112mg"
+  }
+ },
+ "nutrition_label": "1食（91g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13993/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

@@ -1,0 +1,42 @@
+{
+ "chain": "acecook",
+ "product_id": "003431",
+ "name": "タテ型 飲み干す一杯 黒酢担担麺",
+ "price_excl_tax": 187,
+ "price_label": null,
+ "launch_date": "2026-10-19",
+ "launch_month": null,
+ "net_amount": "65g（めん 50g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071410971",
+ "nutrition": {
+  "kcal": 287.0,
+  "protein_g": 7.0,
+  "fat_g": 11.9,
+  "carbs_g": 38.0,
+  "salt_g": 3.0,
+  "other": {
+   "ビタミンB1": "0.30mg",
+   "ビタミンB2": "0.22mg",
+   "カルシウム": "202mg"
+  }
+ },
+ "nutrition_label": "1食（65g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003431/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

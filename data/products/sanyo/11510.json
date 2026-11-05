@@ -1,0 +1,42 @@
+{
+ "chain": "sanyo",
+ "product_id": "11510",
+ "name": "サッポロ一番 名店の味 天下一品 京都濃厚鶏白湯 タテビッグ",
+ "price_excl_tax": 298,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-10",
+ "net_amount": "100g（70g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734063179",
+ "nutrition": {
+  "kcal": 443.0,
+  "protein_g": 11.2,
+  "fat_g": 19.4,
+  "carbs_g": 56.0,
+  "salt_g": 6.9,
+  "other": {
+   "食塩相当量(めん・かやく)": "2.2g",
+   "食塩相当量(スープ)": "4.7g",
+   "カルシウム": "286mg"
+  }
+ },
+ "nutrition_label": "1食（100g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11510/",
+ "first_seen_at": "2026-11-05T13:12:57+09:00",
+ "detail_checked_at": "2026-11-05"
+}

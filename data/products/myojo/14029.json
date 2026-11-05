@@ -1,0 +1,41 @@
+{
+ "chain": "myojo",
+ "product_id": "14029",
+ "name": "明星 食べて応援 沖縄そうめんチャンプルー",
+ "price_excl_tax": 252,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "107g（90g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881406819",
+ "nutrition": {
+  "kcal": 504.0,
+  "protein_g": 9.8,
+  "fat_g": 25.5,
+  "carbs_g": 58.8,
+  "salt_g": 3.5,
+  "other": {
+   "ビタミンB1": "0.30mg",
+   "ビタミンB2": "0.34mg",
+   "カルシウム": "200mg"
+  }
+ },
+ "nutrition_label": "1食（107g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "乳成分",
+   "豚肉",
+   "さば",
+   "大豆",
+   "ごま"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14029/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

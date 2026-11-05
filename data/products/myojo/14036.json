@@ -1,0 +1,44 @@
+{
+ "chain": "myojo",
+ "product_id": "14036",
+ "name": "明星 一平ちゃん夜店の焼そば 大盛 今だけ！肉２倍量",
+ "price_excl_tax": 298,
+ "price_label": null,
+ "launch_date": "2026-10-05",
+ "launch_month": null,
+ "net_amount": "177g（130g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881404570",
+ "nutrition": {
+  "kcal": 771.0,
+  "protein_g": 12.9,
+  "fat_g": 32.7,
+  "carbs_g": 106.2,
+  "salt_g": 6.7,
+  "other": {
+   "ビタミンB1": "0.46mg",
+   "ビタミンB2": "0.46mg",
+   "カルシウム": "193mg"
+  }
+ },
+ "nutrition_label": "1食（177g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "牛肉",
+   "大豆",
+   "ごま",
+   "りんご",
+   "オレンジ"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14036/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

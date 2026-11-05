@@ -1,0 +1,43 @@
+{
+ "chain": "myojo",
+ "product_id": "14028",
+ "name": "明星 NEO油そば 満鶏軒(マンチーケン)監修 フォアグラ風味鴨油そば",
+ "price_excl_tax": 358,
+ "price_label": null,
+ "launch_date": "2026-10-12",
+ "launch_month": null,
+ "net_amount": "162g（130g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459679",
+ "nutrition": {
+  "kcal": 734.0,
+  "protein_g": 11.2,
+  "fat_g": 34.2,
+  "carbs_g": 95.3,
+  "salt_g": 6.5,
+  "other": {
+   "ビタミンB1": "0.32mg",
+   "ビタミンB2": "0.34mg",
+   "カルシウム": "190mg"
+  }
+ },
+ "nutrition_label": "1食（162g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま",
+   "りんご"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14028/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

@@ -1,0 +1,42 @@
+{
+ "chain": "sanyo",
+ "product_id": "11424",
+ "name": "サッポロ一番 名店の味 純連 札幌濃厚辛味噌 ミニカップ",
+ "price_excl_tax": 186,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-09",
+ "net_amount": "57g（40g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734062837",
+ "nutrition": {
+  "kcal": 261.0,
+  "protein_g": 6.1,
+  "fat_g": 11.5,
+  "carbs_g": 33.2,
+  "salt_g": 2.7,
+  "other": {
+   "食塩相当量(めん・かやく)": "0.8g",
+   "食塩相当量(スープ)": "1.9g",
+   "カルシウム": "103mg"
+  }
+ },
+ "nutrition_label": "1食（57g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11424/",
+ "first_seen_at": "2026-11-05T13:12:57+09:00",
+ "detail_checked_at": "2026-11-05"
+}

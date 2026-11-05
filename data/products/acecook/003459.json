@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003459",
+ "name": "日本のおもてなし 黒七味仕立てのうどん",
+ "price_excl_tax": 255,
+ "price_label": null,
+ "launch_date": "2026-11-02",
+ "launch_month": null,
+ "net_amount": "57g（めん 50g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071410933",
+ "nutrition": {
+  "kcal": 254.0,
+  "protein_g": 5.0,
+  "fat_g": 10.0,
+  "carbs_g": 35.9,
+  "salt_g": 3.7,
+  "other": {
+   "ビタミンB1": "0.18mg",
+   "ビタミンB2": "0.20mg",
+   "カルシウム": "140mg"
+  }
+ },
+ "nutrition_label": "1食（57g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003459/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

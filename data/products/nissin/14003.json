@@ -1,0 +1,45 @@
+{
+ "chain": "nissin",
+ "product_id": "14003",
+ "name": "カップヌードル 異世界合体シリーズ カレー&カラムーチョ",
+ "price_excl_tax": 259,
+ "price_label": null,
+ "launch_date": "2026-11-09",
+ "launch_month": null,
+ "net_amount": "80g（60g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105300046",
+ "nutrition": {
+  "kcal": 384.0,
+  "protein_g": 7.2,
+  "fat_g": 17.8,
+  "carbs_g": 48.7,
+  "salt_g": 4.4,
+  "other": {
+   "ビタミンB1": "0.22mg",
+   "ビタミンB2": "0.21mg",
+   "カルシウム": "93mg",
+   "カリウム": "211mg",
+   "リン": "87mg"
+  }
+ },
+ "nutrition_label": "1食（80g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま",
+   "りんご"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14003/",
+ "first_seen_at": "2026-11-05T13:11:40+09:00",
+ "detail_checked_at": "2026-11-05"
+}

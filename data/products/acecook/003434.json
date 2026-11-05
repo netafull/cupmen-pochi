@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003434",
+ "name": "スイッチ！×スーパーカップ 1.5倍 八丁味噌の旨み 鶏野菜みそラーメン",
+ "price_excl_tax": 298,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "107g（めん 90g）",
+ "net_label": null,
+ "sales_area": "東海",
+ "ec_only": false,
+ "jan": "4901071411121",
+ "nutrition": {
+  "kcal": 461.0,
+  "protein_g": 10.7,
+  "fat_g": 15.9,
+  "carbs_g": 68.7,
+  "salt_g": 7.5,
+  "other": {
+   "ビタミンB1": "0.37mg",
+   "ビタミンB2": "0.41mg",
+   "カルシウム": "321mg"
+  }
+ },
+ "nutrition_label": "1食（107g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003434/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

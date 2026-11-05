@@ -1,0 +1,45 @@
+{
+ "chain": "myojo",
+ "product_id": "14030",
+ "name": "明星 中華三昧タテ型ビッグ 重慶飯店 具だくさん麻辣湯麺",
+ "price_excl_tax": 328,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "91g（65g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881418935",
+ "nutrition": {
+  "kcal": 352.0,
+  "protein_g": 9.5,
+  "fat_g": 7.3,
+  "carbs_g": 62.0,
+  "salt_g": 6.8,
+  "other": {
+   "ビタミンB1": "0.63mg",
+   "ビタミンB2": "0.36mg"
+  }
+ },
+ "nutrition_label": "1食（91g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "牛肉",
+   "いか",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14030/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

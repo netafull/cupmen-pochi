@@ -1,0 +1,262 @@
+{
+ "top_title": "カップ麺ポチ｜新商品の発売日・カロリーアーカイブ",
+ "site_title": "カップ麺ポチ",
+ "site_tagline": "日清食品・明星食品・サンヨー食品・エースコックのカップ麺の新商品を記録して残す",
+ "site_description": "日清食品・明星食品・サンヨー食品・エースコックのカップ麺の新商品を毎日記録し、発売日・価格・カロリー・アレルゲンを後から引けるアーカイブにしています",
+ "site_url": "https://cupmen.netaful.jp/",
+ "site_accent": "#6A3FA0",
+ "ga_measurement_id": "",
+ "adsense_client_id": "ca-pub-2195959398357532",
+ "adsense_ad_slot": "1215675017",
+ "record_from": "2026-08-01",
+ "chains": [
+  {
+   "slug": "nissin",
+   "name": "日清食品",
+   "base_url": "https://www.nissin.com",
+   "color": "#C8102E",
+   "color_dark": "#FF7A8A"
+  },
+  {
+   "slug": "myojo",
+   "name": "明星食品",
+   "base_url": "https://www.myojofoods.co.jp",
+   "color": "#B45F00",
+   "color_dark": "#FFB050"
+  },
+  {
+   "slug": "sanyo",
+   "name": "サンヨー食品",
+   "base_url": "https://www.sanyofoods.co.jp",
+   "color": "#1F6FB5",
+   "color_dark": "#6FB4F0"
+  },
+  {
+   "slug": "acecook",
+   "name": "エースコック",
+   "base_url": "https://www.acecook.co.jp",
+   "color": "#2E7D32",
+   "color_dark": "#6FCF77"
+  }
+ ],
+ "chain_official": {
+  "nissin": {
+   "source": "日清食品グループ公式サイト",
+   "url": "https://www.nissin.com/jp/product/new/"
+  },
+  "myojo": {
+   "source": "明星食品公式サイト",
+   "url": "https://www.myojofoods.co.jp/products/"
+  },
+  "sanyo": {
+   "source": "サンヨー食品公式サイト",
+   "url": "https://www.sanyofoods.co.jp/products/"
+  },
+  "acecook": {
+   "source": "エースコック公式サイト",
+   "url": "https://www.acecook.co.jp/products/arrival/"
+  }
+ },
+ "user_agent": "CupmenPochi/1.0 (+https://cupmen.netaful.jp/)",
+ "request_interval_seconds": {
+  "nissin": 2,
+  "myojo": 2,
+  "sanyo": 2,
+  "acecook": 2
+ },
+ "max_requests_per_run": {
+  "nissin": 50,
+  "myojo": 50,
+  "sanyo": 50,
+  "acecook": 50
+ },
+ "recheck_days": 30,
+ "recheck_max_per_run": 3,
+ "list_drop_min_prev": {
+  "nissin": 15,
+  "myojo": 50,
+  "sanyo": 30,
+  "acecook": 0
+ },
+ "new_burst_min": 10,
+ "new_burst_ratio": 0.95,
+ "new_burst_min_by_chain": {
+  "nissin": 15,
+  "myojo": 12,
+  "sanyo": 20,
+  "acecook": 10
+ },
+ "new_burst_abs_by_chain": {
+  "nissin": 40,
+  "myojo": 30,
+  "sanyo": 40,
+  "acecook": 25
+ },
+ "netaful_tags": {
+  "nissin": null,
+  "myojo": null,
+  "sanyo": null,
+  "acecook": null
+ },
+ "netaful_search_terms": {
+  "nissin": "日清",
+  "myojo": "明星",
+  "sanyo": "サッポロ一番",
+  "acecook": "エースコック"
+ },
+ "netaful_title_filters": {
+  "nissin": [
+   "日清",
+   "カップヌードル",
+   "どん兵衛",
+   "U.F.O.",
+   "UFO",
+   "ラ王",
+   "チキンラーメン"
+  ],
+  "myojo": [
+   "明星",
+   "チャルメラ",
+   "一平ちゃん",
+   "評判屋",
+   "中華三昧"
+  ],
+  "sanyo": [
+   "サッポロ一番",
+   "サンヨー食品",
+   "カップスター"
+  ],
+  "acecook": [
+   "エースコック",
+   "スーパーカップ",
+   "ワンタンメン"
+  ]
+ },
+ "netaful_title_excludes": {},
+ "netaful_title_always": [
+  "nissin",
+  "myojo",
+  "sanyo",
+  "acecook"
+ ],
+ "related_sites": [
+  {
+   "name": "電書ポチ",
+   "desc": "Kindle本セール",
+   "url": "https://book.netaful.jp/"
+  },
+  {
+   "name": "家電ポチ",
+   "desc": "ガジェット・家電セール",
+   "url": "https://kaden.netaful.jp/"
+  },
+  {
+   "name": "林檎ポチ",
+   "desc": "Apple整備済製品",
+   "url": "https://apple.netaful.jp/"
+  },
+  {
+   "name": "漫画ポチ",
+   "desc": "Webマンガ横断検索",
+   "url": "https://manga.netaful.jp/"
+  },
+  {
+   "name": "コンビニポチ",
+   "desc": "コンビニ新商品アーカイブ",
+   "url": "https://conbini.netaful.jp/"
+  },
+  {
+   "name": "ファストフードポチ",
+   "desc": "ファストフード限定メニュー",
+   "url": "https://fastfood.netaful.jp/"
+  },
+  {
+   "name": "カフェポチ",
+   "desc": "カフェ季節限定メニュー",
+   "url": "https://cafe.netaful.jp/"
+  },
+  {
+   "name": "回転寿司ポチ",
+   "desc": "回転寿司の期間限定ネタ",
+   "url": "https://sushi.netaful.jp/"
+  }
+ ],
+ "related_keywords": [
+  {
+   "label": "カップヌードル",
+   "words": [
+    "カップヌードル"
+   ]
+  },
+  {
+   "label": "どん兵衛",
+   "words": [
+    "どん兵衛"
+   ]
+  },
+  {
+   "label": "焼そば",
+   "words": [
+    "焼そば",
+    "焼きそば",
+    "U.F.O.",
+    "一平ちゃん"
+   ]
+  },
+  {
+   "label": "スーパーカップ",
+   "words": [
+    "スーパーカップ"
+   ]
+  },
+  {
+   "label": "サッポロ一番",
+   "words": [
+    "サッポロ一番"
+   ]
+  },
+  {
+   "label": "チャルメラ",
+   "words": [
+    "チャルメラ"
+   ]
+  },
+  {
+   "label": "カレー",
+   "words": [
+    "カレー"
+   ]
+  },
+  {
+   "label": "辛い麺",
+   "words": [
+    "辛",
+    "激辛",
+    "麻辣"
+   ]
+  },
+  {
+   "label": "うどん・そば",
+   "words": [
+    "うどん",
+    "そば"
+   ]
+  },
+  {
+   "label": "ラーメン",
+   "words": [
+    "ラーメン",
+    "らーめん"
+   ]
+  }
+ ],
+ "policy_url": "https://netaful.jp/policy.html",
+ "about": [
+  "日清食品・明星食品・サンヨー食品・エースコックの公式サイトを1日1回チェックして、カップ麺の新商品を記録しています。発売日・価格・内容量・カロリー・アレルゲンを、あとから調べられるようにしています。",
+  "記録しているのは事実情報だけです。商品名・価格・内容量・発売日・発売地域・JANコード・栄養成分・アレルゲンを載せ、画像・商品説明文・原材料名は載せていません。詳しくは各社の公式サイトをご覧ください。各商品のページから、公式ページへのリンクを置いています。",
+  "価格は各社の希望小売価格（税別）です。サンヨー食品は公式サイトに発売月までしか出ていないため、「2026年11月」のように月で表示しています。2026年8月以降に発売された商品から記録しています。",
+  "パッケージの変更などで内容が異なることがあります。最新の情報は各社の公式サイトでご確認ください。当サイトは各社とは関係のない非公式サイトで、運営はブログ「{{ネタフル}}」のコグレです。"
+ ],
+ "rss_max_items": 100,
+ "site_accent_dark": "#C7A6EE"
+}

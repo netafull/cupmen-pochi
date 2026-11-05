@@ -1,0 +1,46 @@
+{
+ "chain": "nissin",
+ "product_id": "13970",
+ "name": "カップヌードル ブラックペッパークラブ",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "78g（60g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296578",
+ "nutrition": {
+  "kcal": 370.0,
+  "protein_g": 8.2,
+  "fat_g": 16.2,
+  "carbs_g": 47.8,
+  "salt_g": 4.6,
+  "other": {
+   "ビタミンB1": "0.79mg",
+   "ビタミンB2": "0.21mg",
+   "カルシウム": "92mg",
+   "カリウム": "157mg",
+   "リン": "85mg"
+  }
+ },
+ "nutrition_label": "1食（78g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "かに",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/13970/",
+ "first_seen_at": "2026-11-05T13:11:40+09:00",
+ "detail_checked_at": "2026-11-05"
+}

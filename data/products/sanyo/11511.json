@@ -1,0 +1,45 @@
+{
+ "chain": "sanyo",
+ "product_id": "11511",
+ "name": "サッポロ一番 久世福商店監修 「毎日だし」で仕上げた 仙台和風辛味噌らーめん",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-10",
+ "net_amount": "67g（50g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734063193",
+ "nutrition": {
+  "kcal": 310.0,
+  "protein_g": 7.7,
+  "fat_g": 14.4,
+  "carbs_g": 37.3,
+  "salt_g": 4.4,
+  "other": {
+   "食塩相当量(めん・かやく)": "1.3g",
+   "食塩相当量(スープ)": "3.1g",
+   "ビタミンB1": "0.30mg",
+   "ビタミンB2": "0.33mg",
+   "カルシウム": "120mg"
+  }
+ },
+ "nutrition_label": "1食（67g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "さば",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11511/",
+ "first_seen_at": "2026-11-05T13:12:57+09:00",
+ "detail_checked_at": "2026-11-05"
+}

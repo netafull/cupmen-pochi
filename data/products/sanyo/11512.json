@@ -1,0 +1,44 @@
+{
+ "chain": "sanyo",
+ "product_id": "11512",
+ "name": "サッポロ一番 ぐんまちゃん 群馬県醸造醤油使用 醤油らーめん",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-10",
+ "net_amount": "63g（50g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734063155",
+ "nutrition": {
+  "kcal": 278.0,
+  "protein_g": 6.6,
+  "fat_g": 10.8,
+  "carbs_g": 38.5,
+  "salt_g": 4.9,
+  "other": {
+   "食塩相当量(めん・かやく)": "1.3g",
+   "食塩相当量(スープ)": "3.6g",
+   "ビタミンB1": "0.29mg",
+   "ビタミンB2": "0.32mg",
+   "カルシウム": "110mg"
+  }
+ },
+ "nutrition_label": "1食（63g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11512/",
+ "first_seen_at": "2026-11-05T13:12:57+09:00",
+ "detail_checked_at": "2026-11-05"
+}

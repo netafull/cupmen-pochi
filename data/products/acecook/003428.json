@@ -1,0 +1,45 @@
+{
+ "chain": "acecook",
+ "product_id": "003428",
+ "name": "スーパーカップ 1.5倍×にじさんじ 牛キムチチゲ味ラーメン",
+ "price_excl_tax": 298,
+ "price_label": null,
+ "launch_date": "2026-10-12",
+ "launch_month": null,
+ "net_amount": "106g（めん 90g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071411169",
+ "nutrition": {
+  "kcal": 459.0,
+  "protein_g": 10.7,
+  "fat_g": 16.3,
+  "carbs_g": 67.4,
+  "salt_g": 6.7,
+  "other": {
+   "ビタミンB1": "0.48mg",
+   "ビタミンB2": "0.42mg",
+   "カルシウム": "374mg"
+  }
+ },
+ "nutrition_label": "1食（106g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "牛肉",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003428/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

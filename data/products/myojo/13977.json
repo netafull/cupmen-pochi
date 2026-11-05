@@ -1,0 +1,45 @@
+{
+ "chain": "myojo",
+ "product_id": "13977",
+ "name": "明星 別格麺神 名古屋台湾ラーメン",
+ "price_excl_tax": 336,
+ "price_label": null,
+ "launch_date": "2026-09-07",
+ "launch_month": null,
+ "net_amount": "104g（73g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881419697",
+ "nutrition": {
+  "kcal": 399.0,
+  "protein_g": 9.7,
+  "fat_g": 10.9,
+  "carbs_g": 65.5,
+  "salt_g": 7.2,
+  "other": {
+   "ビタミンB1": "1.63mg",
+   "ビタミンB2": "0.32mg",
+   "カルシウム": "126mg"
+  }
+ },
+ "nutrition_label": "1食（104g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "牛肉",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13977/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

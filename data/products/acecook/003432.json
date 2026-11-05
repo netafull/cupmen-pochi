@@ -1,0 +1,41 @@
+{
+ "chain": "acecook",
+ "product_id": "003432",
+ "name": "ワンタンメン ブタブタこぶた祭 タンメン味",
+ "price_excl_tax": 298,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "92g（めん 78g）",
+ "net_label": null,
+ "sales_area": "北陸、関西、中国、四国",
+ "ec_only": false,
+ "jan": "4901071410872",
+ "nutrition": {
+  "kcal": 398.0,
+  "protein_g": 8.7,
+  "fat_g": 14.0,
+  "carbs_g": 59.2,
+  "salt_g": 6.2,
+  "other": {
+   "ビタミンB1": "0.26mg",
+   "ビタミンB2": "0.30mg",
+   "カルシウム": "310mg"
+  }
+ },
+ "nutrition_label": "1食（92g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003432/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

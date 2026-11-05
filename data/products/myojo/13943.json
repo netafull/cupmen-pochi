@@ -1,0 +1,45 @@
+{
+ "chain": "myojo",
+ "product_id": "13943",
+ "name": "明星 チャルメラカップ 赤い味噌ちゃんこ味ラーメン",
+ "price_excl_tax": 252,
+ "price_label": null,
+ "launch_date": "2026-08-31",
+ "launch_month": null,
+ "net_amount": "72g（55g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881416726",
+ "nutrition": {
+  "kcal": 325.0,
+  "protein_g": 8.3,
+  "fat_g": 12.7,
+  "carbs_g": 44.3,
+  "salt_g": 4.3,
+  "other": {
+   "ビタミンB1": "0.76mg",
+   "ビタミンB2": "0.24mg",
+   "カルシウム": "90mg"
+  }
+ },
+ "nutrition_label": "1食（72g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "かに",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13943/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

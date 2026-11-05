@@ -1,0 +1,44 @@
+{
+ "chain": "sanyo",
+ "product_id": "11580",
+ "name": "サッポロ一番 ご当地熱愛麺 元祖ニュータンタンメン本舗監修 味噌タン タテビッグ",
+ "price_excl_tax": 271,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-11",
+ "net_amount": "96g（70g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734063513",
+ "nutrition": {
+  "kcal": 392.0,
+  "protein_g": 8.5,
+  "fat_g": 12.1,
+  "carbs_g": 62.2,
+  "salt_g": 6.8,
+  "other": {
+   "食塩相当量(めん・かやく)": "2.3g",
+   "食塩相当量(スープ)": "4.5g",
+   "ビタミンB1": "0.26mg",
+   "ビタミンB2": "0.29mg",
+   "カルシウム": "170mg"
+  }
+ },
+ "nutrition_label": "1食（96g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11580/",
+ "first_seen_at": "2026-11-05T13:12:57+09:00",
+ "detail_checked_at": "2026-11-05"
+}

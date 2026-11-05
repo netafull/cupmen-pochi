@@ -1,0 +1,44 @@
+{
+ "chain": "myojo",
+ "product_id": "13937",
+ "name": "明星 一杯満足 旨辛チゲ味ヌードル",
+ "price_excl_tax": 143,
+ "price_label": null,
+ "launch_date": "2026-08-03",
+ "launch_month": null,
+ "net_amount": "62g（50g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459648",
+ "nutrition": {
+  "kcal": 271.0,
+  "protein_g": 6.9,
+  "fat_g": 9.3,
+  "carbs_g": 39.9,
+  "salt_g": 4.2,
+  "other": {
+   "ビタミンB1": "0.20mg",
+   "ビタミンB2": "0.24mg",
+   "カルシウム": "79mg"
+  }
+ },
+ "nutrition_label": "1食（62g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "いか",
+   "大豆",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13937/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

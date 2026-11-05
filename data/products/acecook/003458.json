@@ -1,0 +1,42 @@
+{
+ "chain": "acecook",
+ "product_id": "003458",
+ "name": "日本のおもてなし 黒七味仕立ての中華そば",
+ "price_excl_tax": 255,
+ "price_label": null,
+ "launch_date": "2026-11-02",
+ "launch_month": null,
+ "net_amount": "57g（めん 50g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071410919",
+ "nutrition": {
+  "kcal": 246.0,
+  "protein_g": 5.7,
+  "fat_g": 8.4,
+  "carbs_g": 36.9,
+  "salt_g": 2.9,
+  "other": {
+   "ビタミンB1": "0.19mg",
+   "ビタミンB2": "0.22mg",
+   "カルシウム": "177mg"
+  }
+ },
+ "nutrition_label": "1食（57g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003458/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

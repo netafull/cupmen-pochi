@@ -1,0 +1,43 @@
+{
+ "chain": "myojo",
+ "product_id": "13992",
+ "name": "明星 一平ちゃん夜店の焼そば 焦がしにんにくたまり醤油味",
+ "price_excl_tax": 252,
+ "price_label": null,
+ "launch_date": "2026-09-21",
+ "launch_month": null,
+ "net_amount": "110g（90g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459358",
+ "nutrition": {
+  "kcal": 493.0,
+  "protein_g": 7.4,
+  "fat_g": 22.4,
+  "carbs_g": 65.5,
+  "salt_g": 4.1,
+  "other": {
+   "ビタミンB1": "0.44mg",
+   "ビタミンB2": "0.34mg",
+   "カルシウム": "124mg"
+  }
+ },
+ "nutrition_label": "1食（110g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ごま",
+   "りんご"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/13992/",
+ "first_seen_at": "2026-11-05T13:12:19+09:00",
+ "detail_checked_at": "2026-11-05"
+}

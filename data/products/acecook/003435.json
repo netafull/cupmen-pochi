@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003435",
+ "name": "ゴリパラ見聞録×スーパーカップ1.5倍 濃厚辛だれ味噌ちゃんぽん",
+ "price_excl_tax": 266,
+ "price_label": null,
+ "launch_date": "2026-10-26",
+ "launch_month": null,
+ "net_amount": "126g（めん 90g）",
+ "net_label": null,
+ "sales_area": "九州、沖縄",
+ "ec_only": false,
+ "jan": "4901071411145",
+ "nutrition": {
+  "kcal": 494.0,
+  "protein_g": 11.6,
+  "fat_g": 18.0,
+  "carbs_g": 71.4,
+  "salt_g": 6.9,
+  "other": {
+   "ビタミンB1": "0.36mg",
+   "ビタミンB2": "0.41mg",
+   "カルシウム": "321mg"
+  }
+ },
+ "nutrition_label": "1食（126g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "牛肉",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003435/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

@@ -1,0 +1,44 @@
+{
+ "chain": "nissin",
+ "product_id": "14011",
+ "name": "日清のどん兵衛 天ぷらそば 年に一度のだし比べ 西",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-02",
+ "launch_month": null,
+ "net_amount": "100g（74g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296738",
+ "nutrition": {
+  "kcal": 491.0,
+  "protein_g": 10.5,
+  "fat_g": 24.3,
+  "carbs_g": 57.6,
+  "salt_g": 5.5,
+  "other": {
+   "ビタミンB1": "0.27mg",
+   "ビタミンB2": "0.25mg",
+   "カルシウム": "155mg",
+   "カリウム": "227mg",
+   "リン": "255mg"
+  }
+ },
+ "nutrition_label": "1食（100g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "そば",
+   "卵",
+   "乳成分",
+   "えび",
+   "大豆",
+   "ごま"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14011/",
+ "first_seen_at": "2026-11-05T13:11:40+09:00",
+ "detail_checked_at": "2026-11-05"
+}

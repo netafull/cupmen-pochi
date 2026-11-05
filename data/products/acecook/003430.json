@@ -1,0 +1,41 @@
+{
+ "chain": "acecook",
+ "product_id": "003430",
+ "name": "タテ型 飲み干す一杯 麻辣担担麺",
+ "price_excl_tax": 187,
+ "price_label": null,
+ "launch_date": "2026-10-19",
+ "launch_month": null,
+ "net_amount": "67g（めん 50g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071410957",
+ "nutrition": {
+  "kcal": 299.0,
+  "protein_g": 7.7,
+  "fat_g": 12.5,
+  "carbs_g": 38.9,
+  "salt_g": 3.1,
+  "other": {
+   "ビタミンB1": "0.35mg",
+   "ビタミンB2": "0.22mg",
+   "カルシウム": "213mg"
+  }
+ },
+ "nutrition_label": "1食（67g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003430/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}

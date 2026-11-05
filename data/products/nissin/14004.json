@@ -1,0 +1,47 @@
+{
+ "chain": "nissin",
+ "product_id": "14004",
+ "name": "カップヌードル 異世界合体シリーズ シーフードヌードル&ごはんですよ!",
+ "price_excl_tax": 259,
+ "price_label": null,
+ "launch_date": "2026-11-09",
+ "launch_month": null,
+ "net_amount": "74g（60g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105300039",
+ "nutrition": {
+  "kcal": 327.0,
+  "protein_g": 7.9,
+  "fat_g": 12.5,
+  "carbs_g": 45.6,
+  "salt_g": 4.3,
+  "other": {
+   "ビタミンB1": "0.71mg",
+   "ビタミンB2": "0.20mg",
+   "カルシウム": "92mg",
+   "カリウム": "293mg",
+   "リン": "83mg"
+  }
+ },
+ "nutrition_label": "1食（74g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "かに",
+   "豚肉",
+   "鶏肉",
+   "いか",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14004/",
+ "first_seen_at": "2026-11-05T13:15:46+09:00",
+ "detail_checked_at": "2026-11-05"
+}

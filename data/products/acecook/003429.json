@@ -1,0 +1,38 @@
+{
+ "chain": "acecook",
+ "product_id": "003429",
+ "name": "福福彩菜 麻辣湯春雨",
+ "price_excl_tax": 239,
+ "price_label": null,
+ "launch_date": "2026-10-12",
+ "launch_month": null,
+ "net_amount": "37g",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071411053",
+ "nutrition": {
+  "kcal": 133.0,
+  "protein_g": 1.6,
+  "fat_g": 2.2,
+  "carbs_g": 27.6,
+  "salt_g": 3.1,
+  "other": {}
+ },
+ "nutrition_label": "1食（37g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003429/",
+ "first_seen_at": "2026-11-05T13:14:38+09:00",
+ "detail_checked_at": "2026-11-05"
+}
