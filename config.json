@@ -179,6 +179,11 @@
    "name": "回転寿司ポチ",
    "desc": "回転寿司の期間限定ネタ",
    "url": "https://sushi.netaful.jp/"
+  },
+  {
+   "name": "ホテルポチ",
+   "desc": "空室ホテルを安い順に検索",
+   "url": "https://hotel.netaful.jp/"
   }
  ],
  "related_keywords": [
