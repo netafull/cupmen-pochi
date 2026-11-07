@@ -44,10 +44,12 @@ body { background: var(--bg); color: var(--text);
   font-family: "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.6; }
 a { color: inherit; }
 header { padding: 24px 16px 12px; max-width: 980px; margin: 0 auto; }
-header h1 a { text-decoration: none; font-size: 22px;
+header h1 a, header .site-name a { text-decoration: none; font-size: 22px;
   display: inline-flex; align-items: center; gap: 8px; }
 /* ロゴは文字とほぼ同じ高さに揃える(96px画像を縮小して表示。姉妹サイトと同じ) */
-header h1 img { width: 32px; height: 32px; }
+header h1 img, header .site-name img { width: 44px; height: 44px; }
+/* トップ以外ではサイト名を h1 にしない(h1 はページの主題に1つだけ)。見た目は h1 と同じ */
+header .site-name { font-size: 2em; font-weight: bold; }
 header p { color: var(--muted); font-size: 13px; margin-top: 4px; }
 nav.crumbs { font-size: 12px; color: var(--muted); margin-top: 8px; }
 nav.crumbs a { text-decoration: none; color: var(--accent); }
@@ -56,7 +58,7 @@ nav.crumbs a { text-decoration: none; color: var(--accent); }
 .sites a { font-size: 12px; padding: 3px 10px; border-radius: 999px;
   border: 1px solid var(--line); background: var(--card); text-decoration: none; }
 main { max-width: 980px; margin: 0 auto; padding: 8px 16px 48px; }
-h2 { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); margin: 24px 0 12px; }
+h2, h1.page-title { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); margin: 24px 0 12px; }
 .sort-bar { display: flex; gap: 8px; margin: 8px 0 16px; flex-wrap: wrap; align-items: center; }
 .sort-bar select, .sort-bar input { font-size: 13px; padding: 5px 8px; border-radius: 6px;
   border: 1px solid var(--line); background: var(--card); color: var(--text); font-family: inherit; }
@@ -96,7 +98,13 @@ h2 { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); 
 .detail table.multi th:first-child { text-align: left; }
 .detail table.pv { max-width: 320px; }
 .detail table.facts { max-width: 420px; margin-bottom: 4px; }
-.detail h3 { margin-top: 16px; font-size: 14px; }
+.detail h2, .detail h3 { margin: 16px 0 0; font-size: 14px; padding: 0; border: 0; }
+.detail h1 .h1-sub { display: block; margin-top: 2px; font-size: 13px; font-weight: 400; color: var(--muted); }
+/* 同名商品・発売日が近い商品へのリンク一覧 */
+.rel-list { list-style: none; margin-top: 6px; font-size: 13px; }
+.rel-list li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.rel-list a { color: var(--accent); }
+.rel-list .rel-meta { display: block; font-size: 11px; color: var(--muted); }
 .detail details { margin-top: 10px; font-size: 13px; }
 .detail details summary { cursor: pointer; color: var(--accent); }
 .detail blockquote { border-left: 3px solid var(--accent); margin: 12px 0; padding: 8px 14px;
@@ -151,11 +159,11 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .item[data-chain="acecook"] .badge { background: var(--acecook); }
 @media (prefers-color-scheme: dark) { .item .badge, .chain-badge { color: #0e1520; } }
 </style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "カップ麺ポチ", "item": "https://cupmen.netaful.jp/"}, {"@type": "ListItem", "position": 2, "name": "明星食品", "item": "https://cupmen.netaful.jp/companies/myojo/"}, {"@type": "ListItem", "position": 3, "name": "明星 一杯満足 旨辛チゲ味ヌードル", "item": "https://cupmen.netaful.jp/items/myojo-13937.html"}]}</script>
 </head>
 <body>
 <header>
-<h1><a data-google-vignette="false" href="/"><img src="/assets/logo.png" alt="" width="32" height="32">カップ麺ポチ</a></h1>
+<div class="site-name"><a data-google-vignette="false" href="/"><img src="/assets/logo.png" alt="" width="44" height="44">カップ麺ポチ</a></div>
 <p>日清食品・明星食品・サンヨー食品・エースコックのカップ麺の新商品を毎日記録し、発売日・価格・カロリー・アレルゲンを後から引けるアーカイブにしています</p>
 </header>
 
@@ -167,8 +175,8 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 
 <p class="price">143円（税別）</p>
 <table class='facts'><tr><th>発売日</th><td>2026年8月3日</td></tr><tr><th>発売地域</th><td>全国</td></tr><tr><th>内容量</th><td>62g（麺量 50g）</td></tr><tr><th>JANコード</th><td>4902881459648</td></tr></table>
-<h3>栄養成分（1食（62g）当たり）</h3><table><tr><th>熱量</th><td>271kcal</td></tr><tr><th>たんぱく質</th><td>6.9g</td></tr><tr><th>脂質</th><td>9.3g</td></tr><tr><th>炭水化物</th><td>39.9g</td></tr><tr><th>食塩相当量</th><td>4.2g</td></tr><tr><th>ビタミンB1</th><td>0.20mg</td></tr><tr><th>ビタミンB2</th><td>0.24mg</td></tr><tr><th>カルシウム</th><td>79mg</td></tr></table>
-<h3>アレルゲン</h3><p class='tags'><strong>含む（特定原材料等28品目）：</strong>小麦、卵、乳成分、えび、豚肉、鶏肉、いか、大豆、ゼラチン</p>
+<h2>栄養成分（1食（62g）当たり）</h2><table><tr><th>熱量</th><td>271kcal</td></tr><tr><th>たんぱく質</th><td>6.9g</td></tr><tr><th>脂質</th><td>9.3g</td></tr><tr><th>炭水化物</th><td>39.9g</td></tr><tr><th>食塩相当量</th><td>4.2g</td></tr><tr><th>ビタミンB1</th><td>0.20mg</td></tr><tr><th>ビタミンB2</th><td>0.24mg</td></tr><tr><th>カルシウム</th><td>79mg</td></tr></table>
+<h2>アレルゲン</h2><p class='tags'><strong>含む（特定原材料等28品目）：</strong>小麦、卵、乳成分、えび、豚肉、鶏肉、いか、大豆、ゼラチン</p>
 <div class="ad-slot">
 <ins class="adsbygoogle"
      style="display:block"
@@ -178,7 +186,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
      data-full-width-responsive="true"></ins>
 </div>
 
-<h3>関連するネタフルの記事（辛い麺）</h3>
+<h2>関連するネタフルの記事（辛い麺）</h2>
 <div class="review-grid">
 <a data-google-vignette="false" class="review-card" href="https://netaful.jp/conbini-meshi/0165750.html" target="_blank" rel="noopener">
 <img src="https://netaful.jp/wp-content/uploads/2025/01/honey-buter-chige-000-300x225.jpg" alt="「明星 モード学園コラボ 辛DEMO幸 ハニーバター風旨辛チゲラーメン」食べたことのない味は説明しにくいということが分かった" loading="lazy" width="300" height="225">
@@ -209,7 +217,17 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </div>
 </a>
 </div>
-<h3>補足と出典</h3>
+
+<h2>同じ時期の明星食品のカップ麺</h2>
+<ul class="rel-list">
+<li><a data-google-vignette="false" href="/items/myojo-13989.html">明星 韓流辛麺 (はんりゅうしんめん) 激辛牛だしチゲラーメン</a><span class="rel-meta">2026年9月14日発売・261円（税別）・425kcal</span></li>
+<li><a data-google-vignette="false" href="/items/myojo-13977.html">明星 別格麺神 名古屋台湾ラーメン</a><span class="rel-meta">2026年9月7日発売・336円（税別）・399kcal</span></li>
+<li><a data-google-vignette="false" href="/items/myojo-13943.html">明星 チャルメラカップ 赤い味噌ちゃんこ味ラーメン</a><span class="rel-meta">2026年8月31日発売・252円（税別）・325kcal</span></li>
+<li><a data-google-vignette="false" href="/items/myojo-13940.html">明星 一平ちゃん夜店の焼そば 超特盛 からしマヨ２個付</a><span class="rel-meta">2026年8月24日発売・340円（税別）・1060kcal</span></li>
+<li><a data-google-vignette="false" href="/items/myojo-13939.html">明星 ＮＥＯ油そば 己巳(つちのとみ)監修トリュフ香る鶏油そば</a><span class="rel-meta">2026年8月3日発売・358円（税別）・770kcal</span></li>
+<li><a data-google-vignette="false" href="/items/myojo-13938.html">明星 一杯満足 きつねうどん</a><span class="rel-meta">2026年8月3日発売・143円（税別）・290kcal</span></li>
+</ul>
+<h2>補足と出典</h2>
 
 <p class='source'>出典：明星食品公式サイト（2026-11-05時点）</p><p class='source'><a data-google-vignette="false" href="https://www.myojofoods.co.jp/products/items/13937/" target="_blank" rel="noopener">公式の商品ページ</a> ・ <a data-google-vignette="false" href="https://www.myojofoods.co.jp/products/" target="_blank" rel="noopener">明星食品公式サイト</a></p>
 

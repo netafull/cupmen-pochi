@@ -44,10 +44,12 @@ body { background: var(--bg); color: var(--text);
   font-family: "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.6; }
 a { color: inherit; }
 header { padding: 24px 16px 12px; max-width: 980px; margin: 0 auto; }
-header h1 a { text-decoration: none; font-size: 22px;
+header h1 a, header .site-name a { text-decoration: none; font-size: 22px;
   display: inline-flex; align-items: center; gap: 8px; }
 /* ロゴは文字とほぼ同じ高さに揃える(96px画像を縮小して表示。姉妹サイトと同じ) */
-header h1 img { width: 32px; height: 32px; }
+header h1 img, header .site-name img { width: 44px; height: 44px; }
+/* トップ以外ではサイト名を h1 にしない(h1 はページの主題に1つだけ)。見た目は h1 と同じ */
+header .site-name { font-size: 2em; font-weight: bold; }
 header p { color: var(--muted); font-size: 13px; margin-top: 4px; }
 nav.crumbs { font-size: 12px; color: var(--muted); margin-top: 8px; }
 nav.crumbs a { text-decoration: none; color: var(--accent); }
@@ -56,7 +58,7 @@ nav.crumbs a { text-decoration: none; color: var(--accent); }
 .sites a { font-size: 12px; padding: 3px 10px; border-radius: 999px;
   border: 1px solid var(--line); background: var(--card); text-decoration: none; }
 main { max-width: 980px; margin: 0 auto; padding: 8px 16px 48px; }
-h2 { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); margin: 24px 0 12px; }
+h2, h1.page-title { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); margin: 24px 0 12px; }
 .sort-bar { display: flex; gap: 8px; margin: 8px 0 16px; flex-wrap: wrap; align-items: center; }
 .sort-bar select, .sort-bar input { font-size: 13px; padding: 5px 8px; border-radius: 6px;
   border: 1px solid var(--line); background: var(--card); color: var(--text); font-family: inherit; }
@@ -96,7 +98,13 @@ h2 { font-size: 18px; padding-left: 10px; border-left: 4px solid var(--accent); 
 .detail table.multi th:first-child { text-align: left; }
 .detail table.pv { max-width: 320px; }
 .detail table.facts { max-width: 420px; margin-bottom: 4px; }
-.detail h3 { margin-top: 16px; font-size: 14px; }
+.detail h2, .detail h3 { margin: 16px 0 0; font-size: 14px; padding: 0; border: 0; }
+.detail h1 .h1-sub { display: block; margin-top: 2px; font-size: 13px; font-weight: 400; color: var(--muted); }
+/* 同名商品・発売日が近い商品へのリンク一覧 */
+.rel-list { list-style: none; margin-top: 6px; font-size: 13px; }
+.rel-list li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.rel-list a { color: var(--accent); }
+.rel-list .rel-meta { display: block; font-size: 11px; color: var(--muted); }
 .detail details { margin-top: 10px; font-size: 13px; }
 .detail details summary { cursor: pointer; color: var(--accent); }
 .detail blockquote { border-left: 3px solid var(--accent); margin: 12px 0; padding: 8px 14px;
@@ -151,11 +159,11 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .item[data-chain="acecook"] .badge { background: var(--acecook); }
 @media (prefers-color-scheme: dark) { .item .badge, .chain-badge { color: #0e1520; } }
 </style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "カップ麺ポチ", "item": "https://cupmen.netaful.jp/"}, {"@type": "ListItem", "position": 2, "name": "エースコック", "item": "https://cupmen.netaful.jp/companies/acecook/"}, {"@type": "ListItem", "position": 3, "name": "日本のおもてなし 黒七味仕立ての中華そば", "item": "https://cupmen.netaful.jp/items/acecook-003458.html"}]}</script>
 </head>
 <body>
 <header>
-<h1><a data-google-vignette="false" href="/"><img src="/assets/logo.png" alt="" width="32" height="32">カップ麺ポチ</a></h1>
+<div class="site-name"><a data-google-vignette="false" href="/"><img src="/assets/logo.png" alt="" width="44" height="44">カップ麺ポチ</a></div>
 <p>日清食品・明星食品・サンヨー食品・エースコックのカップ麺の新商品を毎日記録し、発売日・価格・カロリー・アレルゲンを後から引けるアーカイブにしています</p>
 </header>
 
@@ -167,8 +175,8 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 
 <p class="price">255円（税別）</p>
 <table class='facts'><tr><th>発売日</th><td>2026年11月2日</td></tr><tr><th>発売地域</th><td>全国</td></tr><tr><th>内容量</th><td>57g（めん 50g）</td></tr><tr><th>JANコード</th><td>4901071410919</td></tr></table>
-<h3>栄養成分（1食（57g）当たり）</h3><table><tr><th>熱量</th><td>246kcal</td></tr><tr><th>たんぱく質</th><td>5.7g</td></tr><tr><th>脂質</th><td>8.4g</td></tr><tr><th>炭水化物</th><td>36.9g</td></tr><tr><th>食塩相当量</th><td>2.9g</td></tr><tr><th>ビタミンB1</th><td>0.19mg</td></tr><tr><th>ビタミンB2</th><td>0.22mg</td></tr><tr><th>カルシウム</th><td>177mg</td></tr></table>
-<h3>アレルゲン</h3><p class='tags'><strong>含む（特定原材料等28品目）：</strong>小麦、卵、乳成分、ごま、大豆、鶏肉、豚肉</p>
+<h2>栄養成分（1食（57g）当たり）</h2><table><tr><th>熱量</th><td>246kcal</td></tr><tr><th>たんぱく質</th><td>5.7g</td></tr><tr><th>脂質</th><td>8.4g</td></tr><tr><th>炭水化物</th><td>36.9g</td></tr><tr><th>食塩相当量</th><td>2.9g</td></tr><tr><th>ビタミンB1</th><td>0.19mg</td></tr><tr><th>ビタミンB2</th><td>0.22mg</td></tr><tr><th>カルシウム</th><td>177mg</td></tr></table>
+<h2>アレルゲン</h2><p class='tags'><strong>含む（特定原材料等28品目）：</strong>小麦、卵、乳成分、ごま、大豆、鶏肉、豚肉</p>
 <div class="ad-slot">
 <ins class="adsbygoogle"
      style="display:block"
@@ -178,7 +186,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
      data-full-width-responsive="true"></ins>
 </div>
 
-<h3>関連するネタフルの記事（うどん・そば）</h3>
+<h2>関連するネタフルの記事（うどん・そば）</h2>
 <div class="review-grid">
 <a data-google-vignette="false" class="review-card" href="https://netaful.jp/conbini-meshi/0176950.html" target="_blank" rel="noopener">
 <img src="https://netaful.jp/wp-content/uploads/2025/05/acecook-nazodre-003-485x364.jpg" alt="【エースコック】SNSで話題になったドレッシングをまぜそばにしてしまった「インドカレー屋さんの謎ドレッシング味まぜそば」食べてみた #提供" loading="lazy" width="485" height="364">
@@ -209,7 +217,17 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </div>
 </a>
 </div>
-<h3>補足と出典</h3>
+
+<h2>同じ時期のエースコックのカップ麺</h2>
+<ul class="rel-list">
+<li><a data-google-vignette="false" href="/items/acecook-003459.html">日本のおもてなし 黒七味仕立てのうどん</a><span class="rel-meta">2026年11月2日発売・255円（税別）・254kcal</span></li>
+<li><a data-google-vignette="false" href="/items/acecook-003435.html">ゴリパラ見聞録×スーパーカップ1.5倍 濃厚辛だれ味噌ちゃんぽん</a><span class="rel-meta">2026年10月26日発売・266円（税別）・494kcal</span></li>
+<li><a data-google-vignette="false" href="/items/acecook-003434.html">スイッチ！×スーパーカップ 1.5倍 八丁味噌の旨み 鶏野菜みそラーメン</a><span class="rel-meta">2026年10月26日発売・298円（税別）・461kcal</span></li>
+<li><a data-google-vignette="false" href="/items/acecook-003433.html">マシマシ嵐！わかめラーメン ごま・しょうゆ</a><span class="rel-meta">2026年10月26日発売・266円（税別）・401kcal</span></li>
+<li><a data-google-vignette="false" href="/items/acecook-003432.html">ワンタンメン ブタブタこぶた祭 タンメン味</a><span class="rel-meta">2026年10月26日発売・298円（税別）・398kcal</span></li>
+<li><a data-google-vignette="false" href="/items/acecook-003430.html">タテ型 飲み干す一杯 麻辣担担麺</a><span class="rel-meta">2026年10月19日発売・187円（税別）・299kcal</span></li>
+</ul>
+<h2>補足と出典</h2>
 
 <p class='source'>出典：エースコック公式サイト（2026-11-05時点）</p><p class='source'><a data-google-vignette="false" href="https://www.acecook.co.jp/products/003458/" target="_blank" rel="noopener">公式の商品ページ</a> ・ <a data-google-vignette="false" href="https://www.acecook.co.jp/products/arrival/" target="_blank" rel="noopener">エースコック公式サイト</a></p>
 
