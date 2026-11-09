@@ -1,0 +1,41 @@
+{
+ "chain": "acecook",
+ "product_id": "003460",
+ "name": "麺がうまい 味噌らぁ麺 大盛り",
+ "price_excl_tax": 271,
+ "price_label": null,
+ "launch_date": "2026-11-09",
+ "launch_month": null,
+ "net_amount": "95g（めん 80g）",
+ "net_label": null,
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901071410759",
+ "nutrition": {
+  "kcal": 391.0,
+  "protein_g": 9.1,
+  "fat_g": 13.5,
+  "carbs_g": 58.2,
+  "salt_g": 6.0,
+  "other": {
+   "カルシウム": "191mg"
+  }
+ },
+ "nutrition_label": "1食（95g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003460/",
+ "first_seen_at": "2026-11-09T09:00:25+09:00",
+ "detail_checked_at": "2026-11-09"
+}

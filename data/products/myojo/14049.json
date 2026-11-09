@@ -1,0 +1,42 @@
+{
+ "chain": "myojo",
+ "product_id": "14049",
+ "name": "明星 一平ちゃん夜店の焼そば 大盛 だっくだくタルタルソース えびフライ味",
+ "price_excl_tax": 358,
+ "price_label": null,
+ "launch_date": "2026-11-09",
+ "launch_month": null,
+ "net_amount": "180g（130g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459709",
+ "nutrition": {
+  "kcal": 791.0,
+  "protein_g": 13.8,
+  "fat_g": 38.6,
+  "carbs_g": 97.2,
+  "salt_g": 7.6,
+  "other": {
+   "ビタミンB1": "0.36mg",
+   "ビタミンB2": "0.36mg",
+   "カルシウム": "196mg"
+  }
+ },
+ "nutrition_label": "1食（180g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "大豆",
+   "りんご"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14049/",
+ "first_seen_at": "2026-11-09T09:00:13+09:00",
+ "detail_checked_at": "2026-11-09"
+}
