@@ -338,6 +338,24 @@ class TestCompanyPageSeo(unittest.TestCase):
         self.assertIn('<h1 class="page-title">見出し', h)
 
 
+class TestVisibleBreadcrumbs(unittest.TestCase):
+    """見えるパンくず（タイトルの下）。crumbs を渡したグリッドページだけに出す（2026-11-13追加）。"""
+
+    def test_grid_page_with_crumbs_shows_nav_under_title(self):
+        site_url = g.CONFIG["site_url"]
+        trail = [(g.CONFIG["site_title"], site_url), ("日清食品", site_url + "companies/nissin/")]
+        h = g.render_grid_page("日清食品のカップ麺の新商品", "d", [item()],
+                               site_url + "companies/nissin/", crumbs=trail)
+        nav = ('<nav class="crumbs" aria-label="パンくずリスト"><a data-google-vignette="false" href="/">'
+               f'{g.CONFIG["site_title"]}</a> &gt; <span aria-current="page">日清食品</span></nav>')
+        self.assertIn(nav, h)
+        self.assertLess(h.index('<h1 class="page-title">'), h.index(nav))
+
+    def test_grid_page_without_crumbs_has_no_nav(self):
+        h = g.render_grid_page("見出し", "d", [item()], "https://x/")
+        self.assertNotIn('aria-label="パンくずリスト"', h)
+
+
 class TestOneH1PerPage(unittest.TestCase):
     def test_every_page_type_has_exactly_one_h1(self):
         items = [item(), item(product_id="t9002", name="別の品", launch_date="2026-10-01")]

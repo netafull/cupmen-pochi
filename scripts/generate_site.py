@@ -767,15 +767,19 @@ def filter_bar() -> str:
 
 def render_grid_page(title: str, description: str, items: list[dict], canonical: str,
                      review_chain: str | None = None, empty_text: str = "商品がありません。",
-                     seo_title: str | None = None, extra_head: str = "") -> str:
+                     seo_title: str | None = None, extra_head: str = "",
+                     crumbs: list[tuple[str, str]] | None = None) -> str:
     """title は見出し(h2)に使う。seo_title を渡すと <title> だけをそちらにする。"""
     head_title = seo_title or title
+    # crumbs: パンくずの trail（JSON-LD と同じもの）。渡すと見えるパンくずをタイトルの下に出す
+    nav = breadcrumb_nav(crumbs) if crumbs else ""
+    navline = (nav + "\n") if nav else ""   # パンくずが無いページでは空白行も出さない（従来の出力と完全一致させる）
     reviews_section = render_review_cards("ネタフルの最新レビュー", latest_reviews(review_chain, 5))
     if not items:
-        body = f"<h1 class=\"page-title\">{esc(title)}</h1><p class='empty'>{esc(empty_text)}</p>\n{reviews_section}"
+        body = f"<h1 class=\"page-title\">{esc(title)}</h1>{nav}<p class='empty'>{esc(empty_text)}</p>\n{reviews_section}"
         return page_shell(head_title, description, body, canonical, extra_head=extra_head)
     body = f"""<h1 class="page-title">{esc(title)} (<span id="item-count">{len(items)}</span>件)</h1>
-{filter_bar()}
+{navline}{filter_bar()}
 {render_flat(items)}
 {render_ad_template()}
 {SORT_JS}
@@ -1156,6 +1160,19 @@ def breadcrumb_ld(trail: list[tuple[str, str]]) -> str:
             + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + "</script>")
 
 
+def breadcrumb_nav(trail: list[tuple[str, str]]) -> str:
+    """見えるパンくず（タイトルの下）。JSON-LD と同じ trail を渡し、末尾（現在のページ）はリンクにしない。
+    href はサイト内パスにする（商品ページの既存の nav.crumbs と同じ書き方）。"""
+    site_url = CONFIG.get("site_url", "")
+    parts = []
+    for name, url in trail[:-1]:
+        href = url[len(site_url):] if site_url and url.startswith(site_url) else url
+        parts.append(f'<a href="/{esc(href.lstrip("/"))}">{esc(name)}</a>')
+    if trail:
+        parts.append(f'<span aria-current="page">{esc(trail[-1][0])}</span>')
+    return '<nav class="crumbs" aria-label="パンくずリスト">' + " &gt; ".join(parts) + "</nav>"
+
+
 def render_item_page(item: dict, all_items: list[dict] | None = None) -> str:
     all_items = all_items or []
     chain_name = CHAIN_NAME.get(item["chain"], item["chain"])
@@ -1362,6 +1379,7 @@ def main() -> int:
             review_chain=c["slug"], empty_text="まだ記録がありません。",
             seo_title=seo_t,
             extra_head=breadcrumb_ld([(CONFIG["site_title"], site_url), (c["name"], site_url + f"companies/{c['slug']}/")]),
+            crumbs=[(CONFIG["site_title"], site_url), (c["name"], site_url + f"companies/{c['slug']}/")],
         )
         (cdir / "index.html").write_text(page, encoding="utf-8")
 
