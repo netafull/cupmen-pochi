@@ -1,9 +1,15 @@
 # カップ麺ポチ
 
-日清食品・明星食品・サンヨー食品・エースコックの**カップ麺の新商品**を1日1回巡回して記録し、発売日・価格・内容量・カロリー・アレルゲンをあとから引けるアーカイブにするサイト（公開予定 https://cupmen.netaful.jp/ ）。
+日清食品・明星食品・サンヨー食品・エースコックの**カップ麺の新商品**を1日1回巡回して記録し、発売日・価格・内容量・カロリー・アレルゲンをあとから引けるアーカイブにするサイト（ https://cupmen.netaful.jp/ ）。
 構造は姉妹サイト［回転寿司ポチ］（`sushi-pochi`）のエンジンを引き継いでいる（識別子の `chain` は会社＝メーカーのこと）。
 
-**状態: ローカルだけで作成済み。GitHubリポジトリ・push・DNS・Pages・Cloud Scheduler・Secret は未設定。**
+姉妹サイト [電書ポチ](https://book.netaful.jp/)・[家電ポチ](https://kaden.netaful.jp/)・
+[林檎ポチ](https://apple.netaful.jp/)・[漫画ポチ](https://manga.netaful.jp/)・
+[コンビニポチ](https://conbini.netaful.jp/)・[ファストフードポチ](https://fastfood.netaful.jp/)・
+[カフェポチ](https://cafe.netaful.jp/)・[回転寿司ポチ](https://sushi.netaful.jp/)と同じ作り。
+サイトの色は `#C2185B`（ダークモードは `#F48FB1`）。GA4（`G-CEY0THEB0W`）とAdSenseは設定済み。
+
+**状態: 公開済み・運用中。** GitHub Pagesで公開し、定期実行で毎朝更新している。
 
 ## 方針
 
@@ -23,7 +29,7 @@ python3 scripts/generate_site.py    # docs/ 一式を生成
 python3 -m unittest discover -s tests      # 合成フィクスチャでテスト（公式データのコピーは使わない）
 ```
 
-定期実行は `.github/workflows/update.yml`（workflow_dispatch のみ。schedule も push トリガーも無い）を Cloud Scheduler から起動する前提（ジョブ名の案 `cupmen-pochi-update`、毎朝9:00 JST）。
+定期実行は `.github/workflows/update.yml`（workflow_dispatch のみ。schedule も push トリガーも無い）を Cloud Scheduler から毎朝9:00 JSTに起動している。
 通知は `NTFY_TOPIC`（GitHub Secrets）。未設定なら送らない。一時停止はリポジトリ変数 `NTFY_PAUSED=true`。
 
 ## 取得元と注意点
