@@ -1,0 +1,43 @@
+{
+ "chain": "sanyo",
+ "product_id": "11582",
+ "name": "サッポロ一番 ゴママニア 濃厚胡麻担担麺",
+ "price_excl_tax": 278,
+ "price_label": null,
+ "launch_date": null,
+ "launch_month": "2026-11",
+ "net_amount": "112g（70g）",
+ "net_label": "めん重量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4901734063537",
+ "nutrition": {
+  "kcal": 523.0,
+  "protein_g": 14.3,
+  "fat_g": 26.4,
+  "carbs_g": 57.1,
+  "salt_g": 5.2,
+  "other": {
+   "食塩相当量(めん・かやく)": "1.8g",
+   "食塩相当量(スープ)": "3.4g",
+   "ビタミンB1": "0.38mg",
+   "ビタミンB2": "0.38mg",
+   "カルシウム": "363mg"
+  }
+ },
+ "nutrition_label": "1食（112g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "豚肉"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.sanyofoods.co.jp/products/11582/",
+ "first_seen_at": "2026-11-15T09:00:18+09:00",
+ "detail_checked_at": "2026-11-15"
+}
