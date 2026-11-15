@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003461",
+ "name": "タテ型 じゅーっと！×ワンタンメン 麻辣湯味",
+ "price_excl_tax": 255,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "54g（めん 45g）",
+ "net_label": null,
+ "sales_area": "関西",
+ "ec_only": false,
+ "jan": "4901071411084",
+ "nutrition": {
+  "kcal": 220.0,
+  "protein_g": 4.9,
+  "fat_g": 6.1,
+  "carbs_g": 36.4,
+  "salt_g": 3.7,
+  "other": {
+   "ビタミンB1": "0.16mg",
+   "ビタミンB2": "0.18mg",
+   "カルシウム": "151mg"
+  }
+ },
+ "nutrition_label": "1食（54g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003461/",
+ "first_seen_at": "2026-11-16T07:54:47+09:00",
+ "detail_checked_at": "2026-11-16"
+}

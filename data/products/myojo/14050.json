@@ -1,0 +1,41 @@
+{
+ "chain": "myojo",
+ "product_id": "14050",
+ "name": "明星 一平ちゃん夜店の焼そば スタミナキムチ味",
+ "price_excl_tax": 252,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "117g（90g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881459495",
+ "nutrition": {
+  "kcal": 518.0,
+  "protein_g": 9.5,
+  "fat_g": 24.6,
+  "carbs_g": 64.6,
+  "salt_g": 4.0,
+  "other": {
+   "ビタミンB1": "0.28mg",
+   "ビタミンB2": "0.35mg",
+   "カルシウム": "125mg"
+  }
+ },
+ "nutrition_label": "1食（117g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "大豆",
+   "ごま"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14050/",
+ "first_seen_at": "2026-11-16T07:54:38+09:00",
+ "detail_checked_at": "2026-11-16"
+}

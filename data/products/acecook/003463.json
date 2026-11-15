@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003463",
+ "name": "蜂屋 旭川醤油ラーメン 大盛り",
+ "price_excl_tax": 266,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "122g（めん 90g）",
+ "net_label": null,
+ "sales_area": "北海道",
+ "ec_only": false,
+ "jan": "4901071411343",
+ "nutrition": {
+  "kcal": 461.0,
+  "protein_g": 10.7,
+  "fat_g": 17.1,
+  "carbs_g": 66.0,
+  "salt_g": 7.6,
+  "other": {
+   "ビタミンB1": "0.36mg",
+   "ビタミンB2": "0.41mg",
+   "カルシウム": "320mg"
+  }
+ },
+ "nutrition_label": "1食（122g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "さば",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003463/",
+ "first_seen_at": "2026-11-16T07:54:47+09:00",
+ "detail_checked_at": "2026-11-16"
+}

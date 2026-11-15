@@ -1,0 +1,43 @@
+{
+ "chain": "acecook",
+ "product_id": "003462",
+ "name": "タテ型 じゅーっと！×ワンタンメン わさび塩味",
+ "price_excl_tax": 255,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "60g（めん 50g）",
+ "net_label": null,
+ "sales_area": "関西",
+ "ec_only": false,
+ "jan": "4901071411107",
+ "nutrition": {
+  "kcal": 264.0,
+  "protein_g": 5.4,
+  "fat_g": 10.1,
+  "carbs_g": 37.9,
+  "salt_g": 3.6,
+  "other": {
+   "ビタミンB1": "0.20mg",
+   "ビタミンB2": "0.22mg",
+   "カルシウム": "179mg"
+  }
+ },
+ "nutrition_label": "1食（60g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "ごま",
+   "大豆",
+   "鶏肉",
+   "豚肉",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.acecook.co.jp/products/003462/",
+ "first_seen_at": "2026-11-16T07:54:47+09:00",
+ "detail_checked_at": "2026-11-16"
+}

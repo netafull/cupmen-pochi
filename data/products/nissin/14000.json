@@ -1,0 +1,44 @@
+{
+ "chain": "nissin",
+ "product_id": "14000",
+ "name": "日清のBLACKどん兵衛 背脂醤油黒うどん",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "94g（63g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296776",
+ "nutrition": {
+  "kcal": 377.0,
+  "protein_g": 6.7,
+  "fat_g": 18.0,
+  "carbs_g": 47.1,
+  "salt_g": 4.7,
+  "other": {
+   "ビタミンB1": "0.23mg",
+   "ビタミンB2": "0.23mg",
+   "カルシウム": "142mg",
+   "カリウム": "353mg",
+   "リン": "116mg"
+  }
+ },
+ "nutrition_label": "1食（94g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "豚肉",
+   "鶏肉",
+   "大豆",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14000/",
+ "first_seen_at": "2026-11-16T07:54:30+09:00",
+ "detail_checked_at": "2026-11-16"
+}

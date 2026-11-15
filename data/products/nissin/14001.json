@@ -1,0 +1,43 @@
+{
+ "chain": "nissin",
+ "product_id": "14001",
+ "name": "日清焼そばBLACK U.F.O. ガリマヨブラックイカスミソース焼そば",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-16",
+ "launch_month": null,
+ "net_amount": "97g（85g）",
+ "net_label": "麺量",
+ "sales_area": null,
+ "ec_only": false,
+ "jan": "4902105297131",
+ "nutrition": {
+  "kcal": 445.0,
+  "protein_g": 7.4,
+  "fat_g": 19.5,
+  "carbs_g": 60.0,
+  "salt_g": 3.8,
+  "other": {
+   "ビタミンB1": "0.50mg",
+   "ビタミンB2": "0.73mg",
+   "カルシウム": "165mg",
+   "カリウム": "176mg",
+   "リン": "99mg"
+  }
+ },
+ "nutrition_label": "1食（97g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "いか",
+   "大豆",
+   "りんご"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/14001/",
+ "first_seen_at": "2026-11-16T07:54:30+09:00",
+ "detail_checked_at": "2026-11-16"
+}
