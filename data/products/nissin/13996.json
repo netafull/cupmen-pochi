@@ -1,0 +1,47 @@
+{
+ "chain": "nissin",
+ "product_id": "13996",
+ "name": "カップヌードル 冬の濃厚ミルクシーフードヌードル",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-30",
+ "launch_month": null,
+ "net_amount": "80g（60g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296585",
+ "nutrition": {
+  "kcal": 393.0,
+  "protein_g": 8.0,
+  "fat_g": 19.8,
+  "carbs_g": 45.6,
+  "salt_g": 3.8,
+  "other": {
+   "ビタミンB1": "0.68mg",
+   "ビタミンB2": "0.21mg",
+   "カルシウム": "113mg",
+   "カリウム": "244mg",
+   "リン": "112mg"
+  }
+ },
+ "nutrition_label": "1食（80g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "かに",
+   "豚肉",
+   "鶏肉",
+   "いか",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/13996/",
+ "first_seen_at": "2026-11-18T09:00:17+09:00",
+ "detail_checked_at": "2026-11-18"
+}

@@ -1,0 +1,43 @@
+{
+ "chain": "nissin",
+ "product_id": "13997",
+ "name": "日清のどん兵衛 きつねそば",
+ "price_excl_tax": 248,
+ "price_label": null,
+ "launch_date": "2026-11-30",
+ "launch_month": null,
+ "net_amount": "79g（61g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902105296783",
+ "nutrition": {
+  "kcal": 367.0,
+  "protein_g": 9.6,
+  "fat_g": 16.1,
+  "carbs_g": 45.8,
+  "salt_g": 5.2,
+  "other": {
+   "ビタミンB1": "0.25mg",
+   "ビタミンB2": "0.24mg",
+   "カルシウム": "125mg",
+   "カリウム": "182mg",
+   "リン": "211mg"
+  }
+ },
+ "nutrition_label": "1食（79g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "そば",
+   "乳成分",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.nissin.com/jp/product/items/13997/",
+ "first_seen_at": "2026-11-18T09:00:17+09:00",
+ "detail_checked_at": "2026-11-18"
+}
