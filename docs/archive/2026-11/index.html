@@ -125,6 +125,13 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .about p { margin-top: 8px; }
 .about a { color: var(--accent); }
 .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+/* 2026-11-18 カードのカテゴリアイコン(ドット絵32px)。左にアイコン、右に今までの中身。32マスの倍数で出すと点がそろう */
+.item:has(> .cat-icon) { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.item > .cat-icon { grid-column: 1; grid-row: 1 / span 5; width: 48px; height: 48px; image-rendering: pixelated; }
+.item:has(> .cat-icon) > :not(.cat-icon) { grid-column: 2; min-width: 0; }
+.item:has(> .cat-icon) .badge { justify-self: start; }
+.item:has(> .cat-icon) .review-badge { justify-self: start; }
+@media (min-width: 700px) { .item > .cat-icon { width: 64px; height: 64px; } }
 .item .review-badge { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--accent);
   border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -184,6 +191,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <div class="grid" data-sortable>
 <a data-google-vignette="false" class="item" href="/items/nissin-13997.html" data-kcal="367.0"
    data-date="2026-11-30" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 きつねそば</div>
   <div class="price">248円（税別）<span class="kcal">367kcal</span></div>
@@ -192,6 +200,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-13996.html" data-kcal="393.0"
    data-date="2026-11-30" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">カップヌードル 冬の濃厚ミルクシーフードヌードル</div>
   <div class="price">248円（税別）<span class="kcal">393kcal</span></div>
@@ -200,6 +209,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-13998.html" data-kcal="426.0"
    data-date="2026-11-23" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清マ王 大魔王味噌</div>
   <div class="price">368円（税別）<span class="kcal">426kcal</span></div>
@@ -208,6 +218,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003463.html" data-kcal="461.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">蜂屋 旭川醤油ラーメン 大盛り</div>
   <div class="price">266円（税別）<span class="kcal">461kcal</span></div>
@@ -216,6 +227,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-14050.html" data-kcal="518.0"
    data-date="2026-11-16" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 一平ちゃん夜店の焼そば スタミナキムチ味</div>
   <div class="price">252円（税別）<span class="kcal">518kcal</span></div>
@@ -224,6 +236,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14001.html" data-kcal="445.0"
    data-date="2026-11-16" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清焼そばBLACK U.F.O. ガリマヨブラックイカスミソース焼そば</div>
   <div class="price">248円（税別）<span class="kcal">445kcal</span></div>
@@ -232,6 +245,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14000.html" data-kcal="377.0"
    data-date="2026-11-16" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のBLACKどん兵衛 背脂醤油黒うどん</div>
   <div class="price">248円（税別）<span class="kcal">377kcal</span></div>
@@ -240,6 +254,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003461.html" data-kcal="220.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 じゅーっと！×ワンタンメン 麻辣湯味</div>
   <div class="price">255円（税別）<span class="kcal">220kcal</span></div>
@@ -248,6 +263,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003462.html" data-kcal="264.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 じゅーっと！×ワンタンメン わさび塩味</div>
   <div class="price">255円（税別）<span class="kcal">264kcal</span></div>
@@ -256,6 +272,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003460.html" data-kcal="391.0"
    data-date="2026-11-09" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">麺がうまい 味噌らぁ麺 大盛り</div>
   <div class="price">271円（税別）<span class="kcal">391kcal</span></div>
@@ -264,6 +281,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-14049.html" data-kcal="791.0"
    data-date="2026-11-09" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 一平ちゃん夜店の焼そば 大盛 だっくだくタルタルソース えびフライ味</div>
   <div class="price">358円（税別）<span class="kcal">791kcal</span></div>
@@ -272,6 +290,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14004.html" data-kcal="327.0"
    data-date="2026-11-09" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">カップヌードル 異世界合体シリーズ シーフードヌードル&amp;ごはんですよ!</div>
   <div class="price">259円（税別）<span class="kcal">327kcal</span></div>
@@ -280,6 +299,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14003.html" data-kcal="384.0"
    data-date="2026-11-09" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">カップヌードル 異世界合体シリーズ カレー&amp;カラムーチョ</div>
   <div class="price">259円（税別）<span class="kcal">384kcal</span></div>
@@ -288,6 +308,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14002.html" data-kcal="353.0"
    data-date="2026-11-09" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">カップヌードル 異世界合体シリーズ カップヌードル&amp;銀だこ</div>
   <div class="price">259円（税別）<span class="kcal">353kcal</span></div>
@@ -296,6 +317,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14011.html" data-kcal="491.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 天ぷらそば 年に一度のだし比べ 西</div>
   <div class="price">248円（税別）<span class="kcal">491kcal</span></div>
@@ -304,6 +326,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14012.html" data-kcal="491.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 天ぷらそば 年に一度のだし比べ 東</div>
   <div class="price">248円（税別）<span class="kcal">491kcal</span></div>
@@ -312,6 +335,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14010.html" data-kcal="442.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 天ぷらそば 年に一度のだし比べ 信州</div>
   <div class="price">248円（税別）<span class="kcal">442kcal</span></div>
@@ -320,6 +344,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14007.html" data-kcal="417.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 きつねうどん 年に一度のだし比べ 西</div>
   <div class="price">248円（税別）<span class="kcal">417kcal</span></div>
@@ -328,6 +353,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14009.html" data-kcal="423.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 きつねうどん 年に一度のだし比べ 東</div>
   <div class="price">248円（税別）<span class="kcal">423kcal</span></div>
@@ -336,6 +362,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/nissin-14008.html" data-kcal="428.0"
    data-date="2026-11-02" data-chain="nissin">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">日清食品</div>
   <div class="t">日清のどん兵衛 きつねうどん 年に一度のだし比べ 博多</div>
   <div class="price">248円（税別）<span class="kcal">428kcal</span></div>
@@ -344,6 +371,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003458.html" data-kcal="246.0"
    data-date="2026-11-02" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">日本のおもてなし 黒七味仕立ての中華そば</div>
   <div class="price">255円（税別）<span class="kcal">246kcal</span></div>
@@ -352,6 +380,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003459.html" data-kcal="254.0"
    data-date="2026-11-02" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">日本のおもてなし 黒七味仕立てのうどん</div>
   <div class="price">255円（税別）<span class="kcal">254kcal</span></div>
@@ -360,6 +389,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11582.html" data-kcal="523.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ゴママニア 濃厚胡麻担担麺</div>
   <div class="price">278円（税別）<span class="kcal">523kcal</span></div>
@@ -368,6 +398,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11576.html" data-kcal="286.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 カップスター 辛口尾道中華そば</div>
   <div class="price">236円（税別）<span class="kcal">286kcal</span></div>
@@ -376,6 +407,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11575.html" data-kcal="276.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 カップスター 広島中華そば</div>
   <div class="price">236円（税別）<span class="kcal">276kcal</span></div>
@@ -384,6 +416,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11580.html" data-kcal="392.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ご当地熱愛麺 元祖ニュータンタンメン本舗監修 味噌タン タテビッグ</div>
   <div class="price">271円（税別）<span class="kcal">392kcal</span></div>

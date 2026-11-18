@@ -125,6 +125,13 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .about p { margin-top: 8px; }
 .about a { color: var(--accent); }
 .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+/* 2026-11-18 カードのカテゴリアイコン(ドット絵32px)。左にアイコン、右に今までの中身。32マスの倍数で出すと点がそろう */
+.item:has(> .cat-icon) { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.item > .cat-icon { grid-column: 1; grid-row: 1 / span 5; width: 48px; height: 48px; image-rendering: pixelated; }
+.item:has(> .cat-icon) > :not(.cat-icon) { grid-column: 2; min-width: 0; }
+.item:has(> .cat-icon) .badge { justify-self: start; }
+.item:has(> .cat-icon) .review-badge { justify-self: start; }
+@media (min-width: 700px) { .item > .cat-icon { width: 64px; height: 64px; } }
 .item .review-badge { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--accent);
   border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -185,6 +192,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <div class="grid" data-sortable>
 <a data-google-vignette="false" class="item" href="/items/acecook-003463.html" data-kcal="461.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">蜂屋 旭川醤油ラーメン 大盛り</div>
   <div class="price">266円（税別）<span class="kcal">461kcal</span></div>
@@ -193,6 +201,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003461.html" data-kcal="220.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 じゅーっと！×ワンタンメン 麻辣湯味</div>
   <div class="price">255円（税別）<span class="kcal">220kcal</span></div>
@@ -201,6 +210,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003462.html" data-kcal="264.0"
    data-date="2026-11-16" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 じゅーっと！×ワンタンメン わさび塩味</div>
   <div class="price">255円（税別）<span class="kcal">264kcal</span></div>
@@ -209,6 +219,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003460.html" data-kcal="391.0"
    data-date="2026-11-09" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">麺がうまい 味噌らぁ麺 大盛り</div>
   <div class="price">271円（税別）<span class="kcal">391kcal</span></div>
@@ -217,6 +228,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003458.html" data-kcal="246.0"
    data-date="2026-11-02" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">日本のおもてなし 黒七味仕立ての中華そば</div>
   <div class="price">255円（税別）<span class="kcal">246kcal</span></div>
@@ -225,6 +237,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003459.html" data-kcal="254.0"
    data-date="2026-11-02" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">日本のおもてなし 黒七味仕立てのうどん</div>
   <div class="price">255円（税別）<span class="kcal">254kcal</span></div>
@@ -233,6 +246,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003432.html" data-kcal="398.0"
    data-date="2026-10-26" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">ワンタンメン ブタブタこぶた祭 タンメン味</div>
   <div class="price">298円（税別）<span class="kcal">398kcal</span></div>
@@ -241,6 +255,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003433.html" data-kcal="401.0"
    data-date="2026-10-26" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">マシマシ嵐！わかめラーメン ごま・しょうゆ</div>
   <div class="price">266円（税別）<span class="kcal">401kcal</span></div>
@@ -249,6 +264,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003434.html" data-kcal="461.0"
    data-date="2026-10-26" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">スイッチ！×スーパーカップ 1.5倍 八丁味噌の旨み 鶏野菜みそラーメン</div>
   <div class="price">298円（税別）<span class="kcal">461kcal</span></div>
@@ -257,6 +273,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003435.html" data-kcal="494.0"
    data-date="2026-10-26" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">ゴリパラ見聞録×スーパーカップ1.5倍 濃厚辛だれ味噌ちゃんぽん</div>
   <div class="price">266円（税別）<span class="kcal">494kcal</span></div>
@@ -265,6 +282,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003431.html" data-kcal="287.0"
    data-date="2026-10-19" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 飲み干す一杯 黒酢担担麺</div>
   <div class="price">187円（税別）<span class="kcal">287kcal</span></div>
@@ -273,6 +291,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003430.html" data-kcal="299.0"
    data-date="2026-10-19" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">タテ型 飲み干す一杯 麻辣担担麺</div>
   <div class="price">187円（税別）<span class="kcal">299kcal</span></div>
@@ -281,6 +300,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003429.html" data-kcal="133.0"
    data-date="2026-10-12" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">福福彩菜 麻辣湯春雨</div>
   <div class="price">239円（税別）<span class="kcal">133kcal</span></div>
@@ -289,6 +309,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/acecook-003428.html" data-kcal="459.0"
    data-date="2026-10-12" data-chain="acecook">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">エースコック</div>
   <div class="t">スーパーカップ 1.5倍×にじさんじ 牛キムチチゲ味ラーメン</div>
   <div class="price">298円（税別）<span class="kcal">459kcal</span></div>

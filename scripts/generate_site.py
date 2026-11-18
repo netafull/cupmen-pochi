@@ -240,6 +240,18 @@ def fmt_net(item: dict) -> str:
     return net
 
 
+# カテゴリアイコン(ドット絵SVG, docs/assets/icons/cat/<slug>.svg)。このサイトは全商品がカップ麺なので、
+# 元データにカテゴリーが無くても全カードに同じ「cupnoodle」を付ける(商品名からの推定は使わない)。
+# 他のポチ(新発売ポチ等)とカードの見た目をそろえるための印で、カテゴリー名としては表示しない。
+CATEGORY_ICON = ("cupnoodle", "カップ麺")
+
+
+def category_icon_html() -> str:
+    slug, label = CATEGORY_ICON
+    return (f'<img class="cat-icon" src="/assets/icons/cat/{slug}.svg" width="32" height="32" '
+            f'alt="{esc(label)}" loading="lazy" decoding="async">')
+
+
 def render_card(item: dict) -> str:
     chain_name = CHAIN_NAME.get(item["chain"], item["chain"])
     kcal = (item.get("nutrition") or {}).get("kcal")
@@ -248,6 +260,7 @@ def render_card(item: dict) -> str:
     launch = launch_text(item)
     return f"""<a class="item" href="/{esc(item_url(item))}" data-kcal="{kcal if kcal is not None else ''}"
    data-date="{esc(sort_date(item))}" data-chain="{esc(item['chain'])}">
+  {category_icon_html()}
   <div class="badge">{esc(chain_name)}</div>
   <div class="t">{esc(item['name'])}</div>
   <div class="price">{esc(fmt_price(item))}{kcal_html}</div>
@@ -353,6 +366,13 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .about p { margin-top: 8px; }
 .about a { color: var(--accent); }
 .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+/* 2026-11-18 カードのカテゴリアイコン(ドット絵32px)。左にアイコン、右に今までの中身。32マスの倍数で出すと点がそろう */
+.item:has(> .cat-icon) { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.item > .cat-icon { grid-column: 1; grid-row: 1 / span 5; width: 48px; height: 48px; image-rendering: pixelated; }
+.item:has(> .cat-icon) > :not(.cat-icon) { grid-column: 2; min-width: 0; }
+.item:has(> .cat-icon) .badge { justify-self: start; }
+.item:has(> .cat-icon) .review-badge { justify-self: start; }
+@media (min-width: 700px) { .item > .cat-icon { width: 64px; height: 64px; } }
 .item .review-badge { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--accent);
   border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));

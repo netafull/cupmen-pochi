@@ -125,6 +125,13 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .about p { margin-top: 8px; }
 .about a { color: var(--accent); }
 .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+/* 2026-11-18 カードのカテゴリアイコン(ドット絵32px)。左にアイコン、右に今までの中身。32マスの倍数で出すと点がそろう */
+.item:has(> .cat-icon) { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.item > .cat-icon { grid-column: 1; grid-row: 1 / span 5; width: 48px; height: 48px; image-rendering: pixelated; }
+.item:has(> .cat-icon) > :not(.cat-icon) { grid-column: 2; min-width: 0; }
+.item:has(> .cat-icon) .badge { justify-self: start; }
+.item:has(> .cat-icon) .review-badge { justify-self: start; }
+@media (min-width: 700px) { .item > .cat-icon { width: 64px; height: 64px; } }
 .item .review-badge { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--accent);
   border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -184,6 +191,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <div class="grid" data-sortable>
 <a data-google-vignette="false" class="item" href="/items/myojo-13943.html" data-kcal="325.0"
    data-date="2026-08-31" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 チャルメラカップ 赤い味噌ちゃんこ味ラーメン</div>
   <div class="price">252円（税別）<span class="kcal">325kcal</span></div>
@@ -192,6 +200,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-13940.html" data-kcal="1060.0"
    data-date="2026-08-24" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 一平ちゃん夜店の焼そば 超特盛 からしマヨ２個付</div>
   <div class="price">340円（税別）<span class="kcal">1060kcal</span></div>
@@ -200,6 +209,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-13939.html" data-kcal="770.0"
    data-date="2026-08-03" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 ＮＥＯ油そば 己巳(つちのとみ)監修トリュフ香る鶏油そば</div>
   <div class="price">358円（税別）<span class="kcal">770kcal</span></div>
@@ -208,6 +218,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-13937.html" data-kcal="271.0"
    data-date="2026-08-03" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 一杯満足 旨辛チゲ味ヌードル</div>
   <div class="price">143円（税別）<span class="kcal">271kcal</span></div>
@@ -216,6 +227,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/myojo-13938.html" data-kcal="290.0"
    data-date="2026-08-03" data-chain="myojo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">明星食品</div>
   <div class="t">明星 一杯満足 きつねうどん</div>
   <div class="price">143円（税別）<span class="kcal">290kcal</span></div>

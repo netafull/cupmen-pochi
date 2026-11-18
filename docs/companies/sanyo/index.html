@@ -125,6 +125,13 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 .about p { margin-top: 8px; }
 .about a { color: var(--accent); }
 .empty { color: var(--muted); font-size: 14px; padding: 12px 0; }
+/* 2026-11-18 カードのカテゴリアイコン(ドット絵32px)。左にアイコン、右に今までの中身。32マスの倍数で出すと点がそろう */
+.item:has(> .cat-icon) { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: start; }
+.item > .cat-icon { grid-column: 1; grid-row: 1 / span 5; width: 48px; height: 48px; image-rendering: pixelated; }
+.item:has(> .cat-icon) > :not(.cat-icon) { grid-column: 2; min-width: 0; }
+.item:has(> .cat-icon) .badge { justify-self: start; }
+.item:has(> .cat-icon) .review-badge { justify-self: start; }
+@media (min-width: 700px) { .item > .cat-icon { width: 64px; height: 64px; } }
 .item .review-badge { display: inline-block; margin-top: 4px; font-size: 10px; color: var(--accent);
   border: 1px solid var(--accent); border-radius: 4px; padding: 0 5px; }
 .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -185,6 +192,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <div class="grid" data-sortable>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11582.html" data-kcal="523.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ゴママニア 濃厚胡麻担担麺</div>
   <div class="price">278円（税別）<span class="kcal">523kcal</span></div>
@@ -193,6 +201,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11576.html" data-kcal="286.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 カップスター 辛口尾道中華そば</div>
   <div class="price">236円（税別）<span class="kcal">286kcal</span></div>
@@ -201,6 +210,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11575.html" data-kcal="276.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 カップスター 広島中華そば</div>
   <div class="price">236円（税別）<span class="kcal">276kcal</span></div>
@@ -209,6 +219,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11580.html" data-kcal="392.0"
    data-date="2026-11-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ご当地熱愛麺 元祖ニュータンタンメン本舗監修 味噌タン タテビッグ</div>
   <div class="price">271円（税別）<span class="kcal">392kcal</span></div>
@@ -217,6 +228,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11510.html" data-kcal="443.0"
    data-date="2026-10-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 名店の味 天下一品 京都濃厚鶏白湯 タテビッグ</div>
   <div class="price">298円（税別）<span class="kcal">443kcal</span></div>
@@ -225,6 +237,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11511.html" data-kcal="310.0"
    data-date="2026-10-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 久世福商店監修 「毎日だし」で仕上げた 仙台和風辛味噌らーめん</div>
   <div class="price">248円（税別）<span class="kcal">310kcal</span></div>
@@ -233,6 +246,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11512.html" data-kcal="278.0"
    data-date="2026-10-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ぐんまちゃん 群馬県醸造醤油使用 醤油らーめん</div>
   <div class="price">248円（税別）<span class="kcal">278kcal</span></div>
@@ -241,6 +255,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11513.html" data-kcal="290.0"
    data-date="2026-10-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 ぐんまちゃん 群馬県醸造味噌使用 味噌らーめん</div>
   <div class="price">248円（税別）<span class="kcal">290kcal</span></div>
@@ -249,6 +264,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11411.html" data-kcal="319.0"
    data-date="2026-09-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 塩とんこつらーめんどんぶり</div>
   <div class="price">236円（税別）<span class="kcal">319kcal</span></div>
@@ -257,6 +273,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 </a>
 <a data-google-vignette="false" class="item" href="/items/sanyo-11424.html" data-kcal="261.0"
    data-date="2026-09-01" data-chain="sanyo">
+  <img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async">
   <div class="badge">サンヨー食品</div>
   <div class="t">サッポロ一番 名店の味 純連 札幌濃厚辛味噌 ミニカップ</div>
   <div class="price">186円（税別）<span class="kcal">261kcal</span></div>

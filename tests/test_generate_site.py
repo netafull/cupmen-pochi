@@ -48,6 +48,21 @@ class TestPriceAndDates(unittest.TestCase):
         self.assertEqual(g.fmt_net(item(net_amount="92g（めん 78g）", net_label=None)), "92g（めん 78g）")
 
 
+class TestCategoryIcon(unittest.TestCase):
+    def test_every_card_has_cupnoodle_icon_first(self):
+        card = g.render_card(item())
+        self.assertRegex(card, r'<a class="item"[^>]*>\s*<img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg"')
+        self.assertIn('alt="カップ麺"', card)
+        # 新しい順の一覧にも全カード分入る
+        flat = g.render_flat([item(product_id="a"), item(product_id="b", chain="sanyo")])
+        self.assertEqual(flat.count('class="cat-icon"'), 2)
+
+    def test_icon_file_exists_and_label_not_shown_as_category(self):
+        slug, _ = g.CATEGORY_ICON
+        self.assertTrue((g.DOCS / "assets" / "icons" / "cat" / f"{slug}.svg").is_file())
+        self.assertNotIn("カップ麺</span>", g.render_card(item()))
+
+
 class TestTopPage(unittest.TestCase):
     def items(self):
         return [
