@@ -3257,8 +3257,13 @@
    }
   ]
  },
- "errors": [],
- "fetched_at": "2026-11-18T09:00:58+09:00",
+ "errors": [
+  "nissin tag=None page=1: JSON解析失敗 Expecting value [13708バイト, text/html, 先頭: '<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"utf8\">   <meta name=\"viewport\" content=\"width=device-width,init']: line 1 column 1 (char 0)",
+  "myojo tag=None page=1: JSON解析失敗 Expecting value [13799バイト, text/html, 先頭: '<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"utf8\">   <meta name=\"viewport\" content=\"width=device-width,init']: line 1 column 1 (char 0)",
+  "sanyo tag=None page=1: JSON解析失敗 Expecting value [13806バイト, text/html, 先頭: '<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"utf8\">   <meta name=\"viewport\" content=\"width=device-width,init']: line 1 column 1 (char 0)",
+  "acecook tag=None page=1: JSON解析失敗 Expecting value [13904バイト, text/html, 先頭: '<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"utf8\">   <meta name=\"viewport\" content=\"width=device-width,init']: line 1 column 1 (char 0)"
+ ],
+ "fetched_at": "2026-11-19T09:08:50+09:00",
  "matches": {
   "sanyo-11510": [
    211135
