@@ -21,7 +21,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
 <style>
 :root {
   --bg: #f4f7fb; --card: #ffffff; --text: #16202c; --muted: #5a6877;
@@ -85,6 +84,10 @@ h2, h1.page-title { font-size: 18px; padding-left: 10px; border-left: 4px solid 
 .detail { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 20px; margin-top: 12px; }
 .detail h1 { font-size: 20px; margin-bottom: 8px; }
+.item-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.item-head h1 { margin: 0; min-width: 0; }
+.item-head .cat-icon { flex-shrink: 0; width: 48px; height: 48px; image-rendering: pixelated; }
+@media (min-width: 700px) { .item-head .cat-icon { width: 64px; height: 64px; } }
 .chain-badge { display: inline-block; font-size: 11px; font-weight: 700; color: #fff;
   border-radius: 4px; padding: 2px 8px; }
 .detail .price { font-size: 18px; font-weight: 700; margin: 8px 0; }
@@ -178,7 +181,7 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <nav class="crumbs"><a data-google-vignette="false" href="/">トップ</a> &gt; <a data-google-vignette="false" href="/companies/myojo/">明星食品</a></nav>
 <div class="detail">
 <div class="chain-badge" style="background:var(--myojo)">明星食品</div>
-<h1>明星 チャルメラ ちいかわラーメン とんこつ味</h1>
+<div class="item-head"><img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg" width="32" height="32" alt="カップ麺" loading="lazy" decoding="async"><h1>明星 チャルメラ ちいかわラーメン とんこつ味</h1></div>
 
 <p class="price">156円（税別）</p>
 <table class='facts'><tr><th>発売日</th><td>2026年9月14日</td></tr><tr><th>発売地域</th><td>全国</td></tr><tr><th>内容量</th><td>38g（麺量 30g）</td></tr><tr><th>JANコード</th><td>4902881435161</td></tr></table>
@@ -242,9 +245,8 @@ footer { max-width: 980px; margin: 0 auto; padding: 16px; color: var(--muted); f
 <footer>
 価格は各社の希望小売価格（税別）です。最新の情報は各社公式サイトでご確認ください。
 当サイトは日清食品・明星食品・サンヨー食品・エースコック各社とは関係のない非公式サイトです。記録しているのは事実情報だけで、画像・商品説明文・原材料名は載せていません。
-公式サイト： <a data-google-vignette="false" href="https://www.nissin.com/jp/product/new/">日清食品</a> ／ <a data-google-vignette="false" href="https://www.myojofoods.co.jp/products/">明星食品</a> ／ <a data-google-vignette="false" href="https://www.sanyofoods.co.jp/products/">サンヨー食品</a> ／ <a data-google-vignette="false" href="https://www.acecook.co.jp/products/arrival/">エースコック</a>
 ｜ <a data-google-vignette="false" href="https://netaful.jp/policy.html">メディアポリシー</a>
-｜ <a data-google-vignette="false" href="/rss.xml">RSS</a> ｜ <a data-google-vignette="false" href="/archive/">発売月別アーカイブ</a>
+｜ <a data-google-vignette="false" href="/archive/">発売月別アーカイブ</a>
 <nav class="sites"><span class="lbl">関連サイト</span>
 <a data-google-vignette="false" href="https://book.netaful.jp/">電書ポチ<span class="lbl"> Kindle本セール</span></a>
 <a data-google-vignette="false" href="https://kaden.netaful.jp/">家電ポチ<span class="lbl"> ガジェット・家電セール</span></a>
