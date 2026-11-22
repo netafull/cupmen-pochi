@@ -99,7 +99,7 @@ class TestItemPage(unittest.TestCase):
     def test_section_order(self):
         h = body_of(g.render_item_page(item()))
         pos = [h.index(x) for x in ("259円（税別）", "発売日", "発売地域", "内容量", "JANコード",
-                                      "栄養成分", "アレルゲン", "補足と出典")]
+                                      "出典：", "栄養成分", "アレルゲン")]
         self.assertEqual(pos, sorted(pos))
         self.assertLess(h.index("<h1>"), h.index("259円（税別）"))
 
@@ -298,8 +298,27 @@ class TestItemPageSeo(unittest.TestCase):
         h = g.render_item_page(a, [a])
         self.assertEqual(h.count("<h1"), 1)
         self.assertNotIn("<h3", h)
-        for head in ("栄養成分", "アレルゲン", "補足と出典"):
+        for head in ("栄養成分", "アレルゲン"):
             self.assertRegex(h, rf"<h2>{head}")
+        self.assertNotIn("補足と出典", h)
+
+    def test_source_line_right_after_facts_with_japanese_date(self):
+        a = item()
+        h = body_of(g.render_item_page(a, [a]))
+        self.assertLess(h.index("table class='facts'"), h.index("出典："))
+        self.assertLess(h.index("出典："), h.index("<h2>栄養成分"))
+        m = re.search(r"出典：[^<（]*（(\d{4}年\d{1,2}月\d{1,2}日)時点）", h)
+        self.assertTrue(m, h)
+        self.assertNotRegex(h, r"\d{4}-\d{2}-\d{2}時点")
+        self.assertEqual(h.count("class='source'"), 1)
+        self.assertIn("公式ページを見る", h)
+
+    def test_supplement_heading_only_when_notes_exist(self):
+        plain = g.render_item_page(item())
+        self.assertNotIn("<h2>補足", plain)
+        noted = g.render_item_page(item(chain="sanyo", launch_date=None, launch_month="2026-11"))
+        self.assertIn("<h2>補足</h2>", noted)
+        self.assertLess(noted.index("出典："), noted.index("<h2>補足</h2>"))
 
     def test_site_name_is_h1_only_on_top(self):
         top = g.page_shell(g.CONFIG["site_title"], "d", "<p>b</p>", g.CONFIG["site_url"], is_top=True)
