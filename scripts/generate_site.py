@@ -332,6 +332,10 @@ h2, h1.page-title { font-size: 18px; padding-left: 10px; border-left: 4px solid 
 .detail { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 20px; margin-top: 12px; }
 .detail h1 { font-size: 20px; margin-bottom: 8px; }
+.item-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.item-head h1 { margin: 0; min-width: 0; }
+.item-head .cat-icon { flex-shrink: 0; width: 48px; height: 48px; image-rendering: pixelated; }
+@media (min-width: 700px) { .item-head .cat-icon { width: 64px; height: 64px; } }
 .chain-badge { display: inline-block; font-size: 11px; font-weight: 700; color: #fff;
   border-radius: 4px; padding: 2px 8px; }
 .detail .price { font-size: 18px; font-weight: 700; margin: 8px 0; }
@@ -1250,7 +1254,7 @@ def render_item_page(item: dict, all_items: list[dict] | None = None) -> str:
     body = f"""<nav class="crumbs"><a href="/">トップ</a> &gt; <a href="/companies/{esc(item['chain'])}/">{esc(chain_name)}</a></nav>
 <div class="detail">
 <div class="chain-badge" style="background:var(--{esc(item['chain'])})">{esc(chain_name)}</div>
-<h1>{esc(item['name'])}{(' <span class="h1-sub">（' + esc(note) + '）</span>') if note else ''}</h1>
+<div class="item-head">{category_icon_html()}<h1>{esc(item['name'])}{(' <span class="h1-sub">（' + esc(note) + '）</span>') if note else ''}</h1></div>
 {tags}
 <p class="price">{price_html}</p>
 {render_facts(item)}
