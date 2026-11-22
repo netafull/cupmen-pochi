@@ -107,7 +107,10 @@ class TestItemPage(unittest.TestCase):
         full = g.render_item_page(item())
         h = body_of(full)
         # 公式の画像は載せない(ネタフル自身のレビュー記事のサムネイルだけが出うる)
+        # (h1左のカテゴリーアイコン /assets/icons/cat/ は除く)
         for src in re.findall(r'<img[^>]*src="([^"]*)"', h):
+            if src.startswith("/assets/icons/cat/"):
+                continue
             self.assertTrue(src.startswith("https://netaful.jp/"), src)
         self.assertIn("76g（麺量 60g）", h)
         self.assertIn("4900000000001", h)
@@ -427,6 +430,17 @@ class TestSitemapLastmod(unittest.TestCase):
         # 商品が無い会社のページには lastmod を付けない
         self.assertIn("<loc>https://cupmen.netaful.jp/companies/myojo/</loc></url>", x)
         self.assertEqual(g.item_lastmod(item(first_seen_at=None)), None)
+
+
+class ItemPageIconTest(unittest.TestCase):
+    def test_item_page_has_same_icon_left_of_h1(self):
+        h = g.render_item_page(item())
+        self.assertIn('<div class="item-head"><img class="cat-icon" src="/assets/icons/cat/cupnoodle.svg"', h)
+        self.assertLess(h.index('class="cat-icon"'), h.index("<h1>"))
+        card_icon = g.category_icon_html()
+        self.assertIn(card_icon, h)
+        self.assertIn(card_icon, g.render_card(item()))
+        self.assertEqual(h.count('class="cat-icon"'), 1)
 
 
 if __name__ == "__main__":
