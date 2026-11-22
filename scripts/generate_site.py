@@ -549,10 +549,14 @@ def page_shell(title: str, description: str, body: str, canonical: str, extra_he
     )
     related_html = f'<nav class="sites"><span class="lbl">関連サイト</span>\n{links}\n</nav>' if related else ""
 
-    policy_url = CONFIG.get("policy_url", "")
-    policy_link = (
-        f'｜ <a href="{esc(policy_url)}">メディアポリシー</a>\n' if policy_url else ""
-    )
+    # 広告・解析の開示文(実際に使っているものだけ書く)
+    if adsense_id and ga_id:
+        disclosure = "当サイトは広告（Google AdSense）を掲載し、アクセス解析（Googleアナリティクス）を使っています。いずれもCookieを使うことがあります。"
+    elif ga_id:
+        disclosure = "当サイトはアクセス解析（Googleアナリティクス）を使っています。Cookieを使うことがあります。"
+    else:
+        disclosure = ""
+    disclosure_line = disclosure + "\n" if disclosure else ""
 
     site_name_link = f'<a href="/">{logo_img}{esc(CONFIG["site_title"])}</a>'
     site_name_html = f"<h1>{site_name_link}</h1>" if is_top else f'<div class="site-name">{site_name_link}</div>'
@@ -590,7 +594,7 @@ def page_shell(title: str, description: str, body: str, canonical: str, extra_he
 <footer>
 価格は各社の希望小売価格（税別）です。最新の情報は各社公式サイトでご確認ください。
 当サイトは{esc(CHAIN_LIST_TEXT)}各社とは関係のない非公式サイトです。記録しているのは事実情報だけで、画像・商品説明文・原材料名は載せていません。
-{policy_link}｜ <a href="/archive/">発売月別アーカイブ</a>
+{disclosure_line}｜ <a href="/archive/">発売月別アーカイブ</a>
 {related_html}
 {SERIES_INDEX_HTML}
 </footer>
