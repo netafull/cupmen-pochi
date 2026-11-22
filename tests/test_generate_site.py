@@ -156,12 +156,12 @@ class TestSiteWide(unittest.TestCase):
         self.assertEqual([x["slug"] for x in c["chains"]], ["nissin", "myojo", "sanyo", "acecook"])
         self.assertNotIn("toyo", " ".join(x["slug"] for x in c["chains"]))
 
-    def test_search_index_and_rss(self):
+    def test_search_index_and_sitemap(self):
         items = [item(), item(product_id="t9002", name="別の品", launch_date="2026-10-01")]
         idx = g.build_search_index(items)
         self.assertEqual(idx[0]["n"], "テストヌードル")
         self.assertEqual(idx[0]["d"], "2026年11月9日発売")
-        self.assertIn("<item>", g.generate_rss(items))
+        self.assertFalse(hasattr(g, "generate_rss"))
         self.assertIn("companies/nissin/", g.generate_sitemap(items, ["2026-11"]))
 
     def test_filter_bar_has_sort_and_company_only(self):
