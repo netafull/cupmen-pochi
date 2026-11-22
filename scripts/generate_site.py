@@ -1050,18 +1050,17 @@ def render_notes(item: dict) -> str:
 
 
 def render_sources(item: dict) -> str:
-    """公式ページへのリンクを、出典として出す。"""
+    """出典の1行。基本情報の表の直後に出す。「出典：○○公式サイト（2026年11月5日時点） ・ 公式ページを見る」"""
     chain = item["chain"]
     chain_name = CHAIN_NAME.get(chain, chain)
     off = CHAIN_OFFICIAL.get(chain, {})
-    links = []
-    if item.get("official_url"):
-        links.append(link_html("公式の商品ページ", item["official_url"]))
-    if off.get("url"):
-        links.append(link_html(f"{chain_name}公式サイト", off["url"]))
+    url = item.get("official_url") or off.get("url")
     fetched = (item.get("first_seen_at") or "")[:10]
-    return (f"<p class='source'>出典：{esc(CHAIN_SOURCE.get(chain, chain_name + '公式サイト'))}（{esc(fetched)}時点）</p>"
-            f"<p class='source'>{' ・ '.join(links)}</p>")
+    when = f"（{esc(fmt_date(fetched))}時点）" if fmt_date(fetched) else ""
+    line = f"出典：{esc(CHAIN_SOURCE.get(chain, chain_name + '公式サイト'))}{when}"
+    if url:
+        line += f" ・ {link_html('公式ページを見る', url)}"
+    return f"<p class='source'>{line}</p>"
 
 
 def render_facts(item: dict) -> str:
@@ -1245,6 +1244,8 @@ def render_item_page(item: dict, all_items: list[dict] | None = None) -> str:
 
     price = fmt_price(item)
     price_html = esc(price) if price else "価格は公式サイトでご確認ください"
+    notes = render_notes(item)
+    notes_html = f"<h2>補足</h2>\n{notes}" if notes else ""
     tags = "<div class='tags'><span>生産終了</span></div>" if item.get("discontinued") else ""
     body = f"""<nav class="crumbs"><a href="/">トップ</a> &gt; <a href="/companies/{esc(item['chain'])}/">{esc(chain_name)}</a></nav>
 <div class="detail">
@@ -1253,6 +1254,7 @@ def render_item_page(item: dict, all_items: list[dict] | None = None) -> str:
 {tags}
 <p class="price">{price_html}</p>
 {render_facts(item)}
+{render_sources(item)}
 {nutrition_html}
 {allergen_html}
 {mid_ad}
@@ -1260,9 +1262,7 @@ def render_item_page(item: dict, all_items: list[dict] | None = None) -> str:
 {related_html}
 {render_same_name(item, others, note_of)}
 {render_related_items(item, all_items)}
-<h2>補足と出典</h2>
-{render_notes(item)}
-{render_sources(item)}
+{notes_html}
 {bottom_ad}
 </div>"""
     canonical = CONFIG.get("site_url", "") + item_url(item)
