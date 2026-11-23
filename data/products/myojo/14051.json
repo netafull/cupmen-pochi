@@ -1,0 +1,46 @@
+{
+ "chain": "myojo",
+ "product_id": "14051",
+ "name": "明星 麺神カップ 札幌風ブラック醤油ラーメン",
+ "price_excl_tax": 300,
+ "price_label": null,
+ "launch_date": "2026-11-23",
+ "launch_month": null,
+ "net_amount": "98g（70g）",
+ "net_label": "麺量",
+ "sales_area": "全国",
+ "ec_only": false,
+ "jan": "4902881419628",
+ "nutrition": {
+  "kcal": 376.0,
+  "protein_g": 9.0,
+  "fat_g": 8.5,
+  "carbs_g": 65.9,
+  "salt_g": 6.8,
+  "other": {
+   "ビタミンB1": "0.32mg",
+   "ビタミンB2": "0.36mg",
+   "カルシウム": "140mg"
+  }
+ },
+ "nutrition_label": "1食（98g）当たり",
+ "allergens": {
+  "contains": [
+   "小麦",
+   "卵",
+   "乳成分",
+   "えび",
+   "豚肉",
+   "鶏肉",
+   "牛肉",
+   "いか",
+   "大豆",
+   "ごま",
+   "ゼラチン"
+  ]
+ },
+ "discontinued": false,
+ "official_url": "https://www.myojofoods.co.jp/products/items/14051/",
+ "first_seen_at": "2026-11-23T09:00:18+09:00",
+ "detail_checked_at": "2026-11-23"
+}
