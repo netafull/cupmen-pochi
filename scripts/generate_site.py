@@ -551,7 +551,7 @@ def page_shell(title: str, description: str, body: str, canonical: str, extra_he
 
     # 広告・解析の開示文(実際に使っているものだけ書く)
     if adsense_id and ga_id:
-        disclosure = "当サイトは広告（Google AdSense）を掲載し、アクセス解析（Googleアナリティクス）を使っています。いずれもCookieを使うことがあります。"
+        disclosure = "当サイトはGoogle AdSenseを掲載し、Googleアナリティクスを使っています。いずれもCookieを使うことがあります。"
     elif ga_id:
         disclosure = "当サイトはアクセス解析（Googleアナリティクス）を使っています。Cookieを使うことがあります。"
     else:
@@ -593,7 +593,7 @@ def page_shell(title: str, description: str, body: str, canonical: str, extra_he
 </main>
 <footer>
 価格は各社の希望小売価格（税別）です。最新の情報は各社公式サイトでご確認ください。
-当サイトは{esc(CHAIN_LIST_TEXT)}各社とは関係のない非公式サイトです。記録しているのは事実情報だけで、画像・商品説明文・原材料名は載せていません。
+当サイトは{esc(CHAIN_LIST_TEXT)}各社とは関係のない非公式サイトです。
 {disclosure_line}｜ <a href="/archive/">発売月別アーカイブ</a>
 {related_html}
 {SERIES_INDEX_HTML}
