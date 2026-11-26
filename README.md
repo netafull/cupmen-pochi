@@ -29,7 +29,7 @@ python3 scripts/generate_site.py    # docs/ 一式を生成
 python3 -m unittest discover -s tests      # 合成フィクスチャでテスト（公式データのコピーは使わない）
 ```
 
-定期実行は `.github/workflows/update.yml`（workflow_dispatch のみ。schedule も push トリガーも無い）を Cloud Scheduler から毎朝9:00 JSTに起動している。
+定期実行は `.github/workflows/update.yml`（workflow_dispatch のみ。schedule も push トリガーも無い）を Cloud Scheduler から毎朝7:20 JSTに起動している（2026-11-26 に9:00から前倒し。新発売ポチ 8:00 の前に終わらせるため）。
 通知は `NTFY_TOPIC`（GitHub Secrets）。未設定なら送らない。一時停止はリポジトリ変数 `NTFY_PAUSED=true`。
 
 ## 取得元と注意点
